@@ -1,0 +1,47 @@
+include ../abstracts/bemto/bemto.pug
+
+// Reviews
++b.SECTION.reviews 
+  // Gallery
+  +e.gallery(id='reviews__gallery')
+    - for (var i = 1; i < 5; ++i){
+      +e.slide
+        +e.img
+          img(src= "img/reviews/souz.jpg" alt='text' title='text')
+        +e.modal
+          img(src= "img/reviews/souz.jpg" alt='text' title='text')
+      +e.slide
+        +e.img
+          img(src= "img/reviews/ip_balanova.jpg" alt='text' title='text')
+        +e.modal
+          img(src= "img/reviews/ip_balanova.jpg" alt='text' title='text')
+    - }
+  // Flamp
+  +e.flamp(id='reviews__flamp')
+    h2 Блок с отзывами с flamp
+  // Form
+  +e.form(id='reviews__form')
+    include _form--review.pug 
+  // Articles   
+  +e.reviews__articles(id='reviews__articles')
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
+      +e.P.person Компания: 
+        span(itemprop="author") ООО Ринджана                
+      +e.P.text Комментарий: 
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
+      +e.P.person Компания: 
+        span(itemprop="author") ООО Ринджана                
+      +e.P.text Комментарий: 
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+    +b.ARTICLE.review(itemscope, itemtype="http://schema.org/Review")
+      +e.H2.title(itemprop="headline") Благодарим за плодотворное сотрудничество
+      +e.P.person Компания: 
+        span(itemprop="author") ООО Ринджана                
+      +e.P.text Комментарий: 
+        span(itemprop="citation") Благодарим за плодотворное сотрудничество, индивидуальный подход, оперативность, грамотность при выполнении работ. 
+
+
+

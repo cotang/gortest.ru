@@ -1,0 +1,415 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$s-chevron-name: 's-chevron';
+$s-chevron-x: 150px;
+$s-chevron-y: 0px;
+$s-chevron-offset-x: -150px;
+$s-chevron-offset-y: 0px;
+$s-chevron-width: 8px;
+$s-chevron-height: 13px;
+$s-chevron-total-width: 158px;
+$s-chevron-total-height: 137px;
+$s-chevron-image: '../img/png-sprite.png';
+$s-chevron: (150px, 0px, -150px, 0px, 8px, 13px, 158px, 137px, '../img/png-sprite.png', 's-chevron', );
+$s-contacts-email-name: 's-contacts-email';
+$s-contacts-email-x: 23px;
+$s-contacts-email-y: 96px;
+$s-contacts-email-offset-x: -23px;
+$s-contacts-email-offset-y: -96px;
+$s-contacts-email-width: 21px;
+$s-contacts-email-height: 19px;
+$s-contacts-email-total-width: 158px;
+$s-contacts-email-total-height: 137px;
+$s-contacts-email-image: '../img/png-sprite.png';
+$s-contacts-email: (23px, 96px, -23px, -96px, 21px, 19px, 158px, 137px, '../img/png-sprite.png', 's-contacts-email', );
+$s-contacts-fax-name: 's-contacts-fax';
+$s-contacts-fax-x: 0px;
+$s-contacts-fax-y: 96px;
+$s-contacts-fax-offset-x: 0px;
+$s-contacts-fax-offset-y: -96px;
+$s-contacts-fax-width: 21px;
+$s-contacts-fax-height: 20px;
+$s-contacts-fax-total-width: 158px;
+$s-contacts-fax-total-height: 137px;
+$s-contacts-fax-image: '../img/png-sprite.png';
+$s-contacts-fax: (0px, 96px, 0px, -96px, 21px, 20px, 158px, 137px, '../img/png-sprite.png', 's-contacts-fax', );
+$s-contacts-mail-name: 's-contacts-mail';
+$s-contacts-mail-x: 69px;
+$s-contacts-mail-y: 118px;
+$s-contacts-mail-offset-x: -69px;
+$s-contacts-mail-offset-y: -118px;
+$s-contacts-mail-width: 19px;
+$s-contacts-mail-height: 11px;
+$s-contacts-mail-total-width: 158px;
+$s-contacts-mail-total-height: 137px;
+$s-contacts-mail-image: '../img/png-sprite.png';
+$s-contacts-mail: (69px, 118px, -69px, -118px, 19px, 11px, 158px, 137px, '../img/png-sprite.png', 's-contacts-mail', );
+$s-contacts-pin-name: 's-contacts-pin';
+$s-contacts-pin-x: 17px;
+$s-contacts-pin-y: 118px;
+$s-contacts-pin-offset-x: -17px;
+$s-contacts-pin-offset-y: -118px;
+$s-contacts-pin-width: 15px;
+$s-contacts-pin-height: 19px;
+$s-contacts-pin-total-width: 158px;
+$s-contacts-pin-total-height: 137px;
+$s-contacts-pin-image: '../img/png-sprite.png';
+$s-contacts-pin: (17px, 118px, -17px, -118px, 15px, 19px, 158px, 137px, '../img/png-sprite.png', 's-contacts-pin', );
+$s-contacts-tel-name: 's-contacts-tel';
+$s-contacts-tel-x: 128px;
+$s-contacts-tel-y: 61px;
+$s-contacts-tel-offset-x: -128px;
+$s-contacts-tel-offset-y: -61px;
+$s-contacts-tel-width: 18px;
+$s-contacts-tel-height: 17px;
+$s-contacts-tel-total-width: 158px;
+$s-contacts-tel-total-height: 137px;
+$s-contacts-tel-image: '../img/png-sprite.png';
+$s-contacts-tel: (128px, 61px, -128px, -61px, 18px, 17px, 158px, 137px, '../img/png-sprite.png', 's-contacts-tel', );
+$s-contacts-time-name: 's-contacts-time';
+$s-contacts-time-x: 128px;
+$s-contacts-time-y: 41px;
+$s-contacts-time-offset-x: -128px;
+$s-contacts-time-offset-y: -41px;
+$s-contacts-time-width: 20px;
+$s-contacts-time-height: 18px;
+$s-contacts-time-total-width: 158px;
+$s-contacts-time-total-height: 137px;
+$s-contacts-time-image: '../img/png-sprite.png';
+$s-contacts-time: (128px, 41px, -128px, -41px, 20px, 18px, 158px, 137px, '../img/png-sprite.png', 's-contacts-time', );
+$s-icon-mail-name: 's-icon-mail';
+$s-icon-mail-x: 93px;
+$s-icon-mail-y: 96px;
+$s-icon-mail-offset-x: -93px;
+$s-icon-mail-offset-y: -96px;
+$s-icon-mail-width: 19px;
+$s-icon-mail-height: 11px;
+$s-icon-mail-total-width: 158px;
+$s-icon-mail-total-height: 137px;
+$s-icon-mail-image: '../img/png-sprite.png';
+$s-icon-mail: (93px, 96px, -93px, -96px, 19px, 11px, 158px, 137px, '../img/png-sprite.png', 's-icon-mail', );
+$s-icon-pin-name: 's-icon-pin';
+$s-icon-pin-x: 0px;
+$s-icon-pin-y: 118px;
+$s-icon-pin-offset-x: 0px;
+$s-icon-pin-offset-y: -118px;
+$s-icon-pin-width: 15px;
+$s-icon-pin-height: 19px;
+$s-icon-pin-total-width: 158px;
+$s-icon-pin-total-height: 137px;
+$s-icon-pin-image: '../img/png-sprite.png';
+$s-icon-pin: (0px, 118px, 0px, -118px, 15px, 19px, 158px, 137px, '../img/png-sprite.png', 's-icon-pin', );
+$s-icon-tel-name: 's-icon-tel';
+$s-icon-tel-x: 128px;
+$s-icon-tel-y: 80px;
+$s-icon-tel-offset-x: -128px;
+$s-icon-tel-offset-y: -80px;
+$s-icon-tel-width: 18px;
+$s-icon-tel-height: 17px;
+$s-icon-tel-total-width: 158px;
+$s-icon-tel-total-height: 137px;
+$s-icon-tel-image: '../img/png-sprite.png';
+$s-icon-tel: (128px, 80px, -128px, -80px, 18px, 17px, 158px, 137px, '../img/png-sprite.png', 's-icon-tel', );
+$s-icon-time-name: 's-icon-time';
+$s-icon-time-x: 128px;
+$s-icon-time-y: 21px;
+$s-icon-time-offset-x: -128px;
+$s-icon-time-offset-y: -21px;
+$s-icon-time-width: 20px;
+$s-icon-time-height: 18px;
+$s-icon-time-total-width: 158px;
+$s-icon-time-total-height: 137px;
+$s-icon-time-image: '../img/png-sprite.png';
+$s-icon-time: (128px, 21px, -128px, -21px, 20px, 18px, 158px, 137px, '../img/png-sprite.png', 's-icon-time', );
+$s-manager-icq-name: 's-manager-icq';
+$s-manager-icq-x: 66px;
+$s-manager-icq-y: 72px;
+$s-manager-icq-offset-x: -66px;
+$s-manager-icq-offset-y: -72px;
+$s-manager-icq-width: 22px;
+$s-manager-icq-height: 22px;
+$s-manager-icq-total-width: 158px;
+$s-manager-icq-total-height: 137px;
+$s-manager-icq-image: '../img/png-sprite.png';
+$s-manager-icq: (66px, 72px, -66px, -72px, 22px, 22px, 158px, 137px, '../img/png-sprite.png', 's-manager-icq', );
+$s-manager-mail-name: 's-manager-mail';
+$s-manager-mail-x: 46px;
+$s-manager-mail-y: 96px;
+$s-manager-mail-offset-x: -46px;
+$s-manager-mail-offset-y: -96px;
+$s-manager-mail-width: 23px;
+$s-manager-mail-height: 17px;
+$s-manager-mail-total-width: 158px;
+$s-manager-mail-total-height: 137px;
+$s-manager-mail-image: '../img/png-sprite.png';
+$s-manager-mail: (46px, 96px, -46px, -96px, 23px, 17px, 158px, 137px, '../img/png-sprite.png', 's-manager-mail', );
+$s-manager-skype-name: 's-manager-skype';
+$s-manager-skype-x: 128px;
+$s-manager-skype-y: 0px;
+$s-manager-skype-offset-x: -128px;
+$s-manager-skype-offset-y: 0px;
+$s-manager-skype-width: 20px;
+$s-manager-skype-height: 19px;
+$s-manager-skype-total-width: 158px;
+$s-manager-skype-total-height: 137px;
+$s-manager-skype-image: '../img/png-sprite.png';
+$s-manager-skype: (128px, 0px, -128px, 0px, 20px, 19px, 158px, 137px, '../img/png-sprite.png', 's-manager-skype', );
+$s-offer-abroad-name: 's-offer-abroad';
+$s-offer-abroad-x: 0px;
+$s-offer-abroad-y: 0px;
+$s-offer-abroad-offset-x: 0px;
+$s-offer-abroad-offset-y: 0px;
+$s-offer-abroad-width: 31px;
+$s-offer-abroad-height: 32px;
+$s-offer-abroad-total-width: 158px;
+$s-offer-abroad-total-height: 137px;
+$s-offer-abroad-image: '../img/png-sprite.png';
+$s-offer-abroad: (0px, 0px, 0px, 0px, 31px, 32px, 158px, 137px, '../img/png-sprite.png', 's-offer-abroad', );
+$s-offer-allow-name: 's-offer-allow';
+$s-offer-allow-x: 0px;
+$s-offer-allow-y: 34px;
+$s-offer-allow-offset-x: 0px;
+$s-offer-allow-offset-y: -34px;
+$s-offer-allow-width: 27px;
+$s-offer-allow-height: 36px;
+$s-offer-allow-total-width: 158px;
+$s-offer-allow-total-height: 137px;
+$s-offer-allow-image: '../img/png-sprite.png';
+$s-offer-allow: (0px, 34px, 0px, -34px, 27px, 36px, 158px, 137px, '../img/png-sprite.png', 's-offer-allow', );
+$s-offer-cert-name: 's-offer-cert';
+$s-offer-cert-x: 29px;
+$s-offer-cert-y: 34px;
+$s-offer-cert-offset-x: -29px;
+$s-offer-cert-offset-y: -34px;
+$s-offer-cert-width: 33px;
+$s-offer-cert-height: 29px;
+$s-offer-cert-total-width: 158px;
+$s-offer-cert-total-height: 137px;
+$s-offer-cert-image: '../img/png-sprite.png';
+$s-offer-cert: (29px, 34px, -29px, -34px, 33px, 29px, 158px, 137px, '../img/png-sprite.png', 's-offer-cert', );
+$s-offer-classify-name: 's-offer-classify';
+$s-offer-classify-x: 33px;
+$s-offer-classify-y: 72px;
+$s-offer-classify-offset-x: -33px;
+$s-offer-classify-offset-y: -72px;
+$s-offer-classify-width: 31px;
+$s-offer-classify-height: 22px;
+$s-offer-classify-total-width: 158px;
+$s-offer-classify-total-height: 137px;
+$s-offer-classify-image: '../img/png-sprite.png';
+$s-offer-classify: (33px, 72px, -33px, -72px, 31px, 22px, 158px, 137px, '../img/png-sprite.png', 's-offer-classify', );
+$s-offer-fire-name: 's-offer-fire';
+$s-offer-fire-x: 99px;
+$s-offer-fire-y: 36px;
+$s-offer-fire-offset-x: -99px;
+$s-offer-fire-offset-y: -36px;
+$s-offer-fire-width: 27px;
+$s-offer-fire-height: 34px;
+$s-offer-fire-total-width: 158px;
+$s-offer-fire-total-height: 137px;
+$s-offer-fire-image: '../img/png-sprite.png';
+$s-offer-fire: (99px, 36px, -99px, -36px, 27px, 34px, 158px, 137px, '../img/png-sprite.png', 's-offer-fire', );
+$s-offer-quality-name: 's-offer-quality';
+$s-offer-quality-x: 64px;
+$s-offer-quality-y: 34px;
+$s-offer-quality-offset-x: -64px;
+$s-offer-quality-offset-y: -34px;
+$s-offer-quality-width: 31px;
+$s-offer-quality-height: 29px;
+$s-offer-quality-total-width: 158px;
+$s-offer-quality-total-height: 137px;
+$s-offer-quality-image: '../img/png-sprite.png';
+$s-offer-quality: (64px, 34px, -64px, -34px, 31px, 29px, 158px, 137px, '../img/png-sprite.png', 's-offer-quality', );
+$s-offer-refuse-name: 's-offer-refuse';
+$s-offer-refuse-x: 0px;
+$s-offer-refuse-y: 72px;
+$s-offer-refuse-offset-x: 0px;
+$s-offer-refuse-offset-y: -72px;
+$s-offer-refuse-width: 31px;
+$s-offer-refuse-height: 22px;
+$s-offer-refuse-total-width: 158px;
+$s-offer-refuse-total-height: 137px;
+$s-offer-refuse-image: '../img/png-sprite.png';
+$s-offer-refuse: (0px, 72px, 0px, -72px, 31px, 22px, 158px, 137px, '../img/png-sprite.png', 's-offer-refuse', );
+$s-offer-san-name: 's-offer-san';
+$s-offer-san-x: 99px;
+$s-offer-san-y: 0px;
+$s-offer-san-offset-x: -99px;
+$s-offer-san-offset-y: 0px;
+$s-offer-san-width: 27px;
+$s-offer-san-height: 34px;
+$s-offer-san-total-width: 158px;
+$s-offer-san-total-height: 137px;
+$s-offer-san-image: '../img/png-sprite.png';
+$s-offer-san: (99px, 0px, -99px, 0px, 27px, 34px, 158px, 137px, '../img/png-sprite.png', 's-offer-san', );
+$s-offer-tech-name: 's-offer-tech';
+$s-offer-tech-x: 33px;
+$s-offer-tech-y: 0px;
+$s-offer-tech-offset-x: -33px;
+$s-offer-tech-offset-y: 0px;
+$s-offer-tech-width: 31px;
+$s-offer-tech-height: 32px;
+$s-offer-tech-total-width: 158px;
+$s-offer-tech-total-height: 137px;
+$s-offer-tech-image: '../img/png-sprite.png';
+$s-offer-tech: (33px, 0px, -33px, 0px, 31px, 32px, 158px, 137px, '../img/png-sprite.png', 's-offer-tech', );
+$s-question-name: 's-question';
+$s-question-x: 66px;
+$s-question-y: 0px;
+$s-question-offset-x: -66px;
+$s-question-offset-y: 0px;
+$s-question-width: 31px;
+$s-question-height: 32px;
+$s-question-total-width: 158px;
+$s-question-total-height: 137px;
+$s-question-image: '../img/png-sprite.png';
+$s-question: (66px, 0px, -66px, 0px, 31px, 32px, 158px, 137px, '../img/png-sprite.png', 's-question', );
+$s-search-name: 's-search';
+$s-search-x: 128px;
+$s-search-y: 99px;
+$s-search-offset-x: -128px;
+$s-search-offset-y: -99px;
+$s-search-width: 17px;
+$s-search-height: 17px;
+$s-search-total-width: 158px;
+$s-search-total-height: 137px;
+$s-search-image: '../img/png-sprite.png';
+$s-search: (128px, 99px, -128px, -99px, 17px, 17px, 158px, 137px, '../img/png-sprite.png', 's-search', );
+$s-social-fb-name: 's-social-fb';
+$s-social-fb-x: 113px;
+$s-social-fb-y: 72px;
+$s-social-fb-offset-x: -113px;
+$s-social-fb-offset-y: -72px;
+$s-social-fb-width: 9px;
+$s-social-fb-height: 18px;
+$s-social-fb-total-width: 158px;
+$s-social-fb-total-height: 137px;
+$s-social-fb-image: '../img/png-sprite.png';
+$s-social-fb: (113px, 72px, -113px, -72px, 9px, 18px, 158px, 137px, '../img/png-sprite.png', 's-social-fb', );
+$s-social-rss-name: 's-social-rss';
+$s-social-rss-x: 34px;
+$s-social-rss-y: 118px;
+$s-social-rss-offset-x: -34px;
+$s-social-rss-offset-y: -118px;
+$s-social-rss-width: 15px;
+$s-social-rss-height: 16px;
+$s-social-rss-total-width: 158px;
+$s-social-rss-total-height: 137px;
+$s-social-rss-image: '../img/png-sprite.png';
+$s-social-rss: (34px, 118px, -34px, -118px, 15px, 16px, 158px, 137px, '../img/png-sprite.png', 's-social-rss', );
+$s-social-tw-name: 's-social-tw';
+$s-social-tw-x: 51px;
+$s-social-tw-y: 118px;
+$s-social-tw-offset-x: -51px;
+$s-social-tw-offset-y: -118px;
+$s-social-tw-width: 16px;
+$s-social-tw-height: 14px;
+$s-social-tw-total-width: 158px;
+$s-social-tw-total-height: 137px;
+$s-social-tw-image: '../img/png-sprite.png';
+$s-social-tw: (51px, 118px, -51px, -118px, 16px, 14px, 158px, 137px, '../img/png-sprite.png', 's-social-tw', );
+$s-social-vk-name: 's-social-vk';
+$s-social-vk-x: 71px;
+$s-social-vk-y: 96px;
+$s-social-vk-offset-x: -71px;
+$s-social-vk-offset-y: -96px;
+$s-social-vk-width: 20px;
+$s-social-vk-height: 13px;
+$s-social-vk-total-width: 158px;
+$s-social-vk-total-height: 137px;
+$s-social-vk-image: '../img/png-sprite.png';
+$s-social-vk: (71px, 96px, -71px, -96px, 20px, 13px, 158px, 137px, '../img/png-sprite.png', 's-social-vk', );
+$s-up-name: 's-up';
+$s-up-x: 90px;
+$s-up-y: 72px;
+$s-up-offset-x: -90px;
+$s-up-offset-y: -72px;
+$s-up-width: 21px;
+$s-up-height: 20px;
+$s-up-total-width: 158px;
+$s-up-total-height: 137px;
+$s-up-image: '../img/png-sprite.png';
+$s-up: (90px, 72px, -90px, -72px, 21px, 20px, 158px, 137px, '../img/png-sprite.png', 's-up', );
+$spritesheet-width: 158px;
+$spritesheet-height: 137px;
+$spritesheet-image: '../img/png-sprite.png';
+$spritesheet-sprites: ($s-chevron, $s-contacts-email, $s-contacts-fax, $s-contacts-mail, $s-contacts-pin, $s-contacts-tel, $s-contacts-time, $s-icon-mail, $s-icon-pin, $s-icon-tel, $s-icon-time, $s-manager-icq, $s-manager-mail, $s-manager-skype, $s-offer-abroad, $s-offer-allow, $s-offer-cert, $s-offer-classify, $s-offer-fire, $s-offer-quality, $s-offer-refuse, $s-offer-san, $s-offer-tech, $s-question, $s-search, $s-social-fb, $s-social-rss, $s-social-tw, $s-social-vk, $s-up, );
+$spritesheet: (158px, 137px, '../img/png-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.page{
+  text-align: left;
+  
+  &__form{
+    &--aside{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+      .form{
+        padding-top: 15px;
+      }
+      .form__close{
+        display: none;
+      }
+      .form__title{
+        text-align: left;
+        padding: 0;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-weight: $bold;
+        font-size: $font-size-form-title;
+      }
+      .form-group{
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+    }
+
+    &--wide{
+      background-color: $lighter-grey;
+      .form{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      form{
+        margin: 0 -15px;
+        // columns: 2;
+        // @include mq($from:xs, $until:md){
+        //   columns: initial;
+        // }
+      }
+      .form__close{
+        display: none;
+      }
+      .form__title{
+        padding: 0 15px;
+        margin: 0;
+        font-weight: $bold;
+        font-size: $font-size-title;
+        // column-span: all;
+        @include mq($from:xs, $until:md){
+          font-size: $font-size-title-24;
+        }
+      }
+      .form-group{
+        margin: 0;
+        padding: 0 15px;
+
+        &:last-of-type{
+          // column-span: all;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+      }
+      .form__textarea{
+        height: 93px;
+      }
+      .btn--form{
+        text-transform: uppercase;
+        font-size: $font-size-promo;
+      }
+    }
+  }
+}
+

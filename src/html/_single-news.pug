@@ -1,0 +1,66 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--single-news
+
+    // Content
+    +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
+    
+      +e.bg
+        .container
+          // Breadcrumbs
+          +b.SECTION.breadcrumbs
+            a(href="index.html") Сертификационный центр Гортест
+            ='>'
+            a(href="page-news.html") Новости
+            ='>'
+            span Первая новость
+          +e.H1.title(itemprop="headline") Первая новость (h1)
+
+      +e.inner
+        .container
+          .row
+            .col-xs-12.col-lg-9
+              +e.text(itemprop="articleBody") 
+                +b.date
+                  span(itemprop="datePublished") 13.09.2016
+                +e.block 
+                  h2 Получить сертификат на автозапчасти: где и как? 
+                  p Если вам требуется получить сертификат на автозапчасти, то, как было сказано выше, лучше сразу обратиться к специалистам «Гортеста», которые обладают самой точной и новой информацией о данном процессе. Тут для вас будет подобрана наиболее удобная схема сертификации, вам же понадобится лишь предоставить в центр необходимые документы:
+                +e.img
+                  img(src='img/single-news.jpg', alt='single-news', title='single-news')
+                +e.block
+                  ul
+                    li заявление от сертификанта;
+                    li документы, удостоверяющие личность физического лица, либо учредительные документы юрлица;
+                    li описание товара;
+                    li протокол испытаний, которые можно пройти в центре «Гортест», и другие.
+                  p Точный список документов, которые потребуются именно для вашего товара, вы также сможете узнать на консультации в центре.
+
+            .col-xs-12.col-lg-3
+              // Latest news
+              +b.SECTION.latest-news  
+                +e.UL.list
+                  +e.item
+                    +e.A.link(href="single-news.html") Вторая новость
+                  +e.item
+                    +e.A.link(href="single-news.html") Третья новость
+                  +e.item
+                    +e.A.link(href="single-news.html") Четвертая новость
+
+    // Specialists
+    +b.SECTION.specialists
+      .container
+        .row
+          .col-xs-12.col-xl-6 
+            +e.H2.title С вами работает    
+            // Manager
+            include partials/components/_manager.pug 
+          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-6.offset-xl-0
+            +e.form
+              // Form application
+              include partials/components/_form--application.pug
+
+
+
+

@@ -1,0 +1,22 @@
+.news{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  &__date{
+    font-size:  $font-size-menu;
+    margin-bottom: 10px;
+  }
+  &__title{
+    margin: 25px 0 30px;
+    font-weight: $bold;
+    font-size: $font-size-title;
+    // @include mq($from:xs, $until:sm){
+    //   font-size: $font-size-promo;
+    // }     
+  }
+  &__subtitle{
+    margin: 10px 0;
+    font-weight: $bold;
+    font-size: $font-size-subtitle;  
+  }
+}
+

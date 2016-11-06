@@ -1,0 +1,28 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.clients
+  .container
+    +e.H2.title Отзывы
+    .row 
+      .col-xs-12
+        +e.gallery
+          - for (var i = 0; i < 2; i++){
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client1.png", alt="client1", title="client1")
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client2.png", alt="client2", title="client2")
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client3.png", alt="client3", title="client3")
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client4.png", alt="client4", title="client4")
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client5.png", alt="client5", title="client5")
+            +e.slide
+              +e.img           
+                img(src= "img/clients/client6.png", alt="client6", title="client6")
+          - }

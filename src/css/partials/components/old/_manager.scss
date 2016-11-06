@@ -1,0 +1,171 @@
+.manager{
+  &:focus{
+    outline: none;
+  }
+   
+  &__title{
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  &__inner{
+    display: flex;
+    @include mq($from:xs, $until:md){
+      flex-wrap: wrap;
+    }
+  }
+  &__photo{
+    flex: 0 0 250px;
+    max-width: 250px;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &__img{
+    width: 250px;
+    height: 270px;
+    @include mq($from:xs, $until:md){
+      margin: 0 auto;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__btn{
+    text-align: center;
+    margin: 5px 0 50px;
+    @include mq($from:xs, $until:md){
+      max-width: 250px;
+      margin: 5px auto 50px;
+    }
+    .btn{
+      width: 100%;
+    }
+  }
+
+  &--sidebar{
+    text-align: center;
+    padding-bottom: 10px;
+    .manager__btn{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .btn{
+      font-size: $font-size;      
+    }
+  }
+}
+
+.manager-info{
+  position: relative;
+  z-index: 2;
+  max-width: 250px;
+  background-color: $dark-grey;
+  color: $white;  
+  @include mq($from:xs, $until:md){
+    margin: 0 auto;
+  }
+
+  &__name{
+    margin: 0;
+    padding: 5px 0;
+    font-size: $font-size-subtitle;
+  }
+  &__line{
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__link{
+    color: $white;
+    &--icq{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 5px;
+        @include sprite($s-contacts-icq);
+      }
+    }
+    &--skype{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 5px;
+        @include sprite($s-contacts-skype);
+      }
+    }
+  }
+
+  &--sidebar{
+    background-color: transparent;
+    color: $text-color;
+    .manager-info__link{
+      color:  $text-color;
+    }
+    .manager-info__name{
+      font-size: $font-size-promo;
+    }
+  }
+}
+
+.manager-bio{
+  flex: 0 0 calc(100% - 250px);
+  max-width: calc(100% - 250px);
+  text-align: left;
+  padding: 0 30px;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  &__name{
+    margin: 10px 0 0;
+    font-size: $font-size-subtitle;
+    font-weight: $semibold;
+  }
+  &__position{
+    font-weight: $semibold;
+  }  
+
+  ul{
+    padding-left: 10px;
+  }
+}
+
+.manager-citation{
+  margin: 0;
+  text-align: left;
+  max-width: 250px;
+  background-color: rgba($lightest-grey, .7);
+  border-radius: 5px;
+  padding: 10px 15px 10px;
+  position: relative;
+  z-index: 2;
+  line-height: 1.25;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 30px;
+    border: 10px solid transparent; 
+    border-top: 10px solid rgba($lightest-grey, .7);
+    border-right: 10px solid rgba($lightest-grey, .7);
+  }
+  &__title{
+    margin: 0 0 5px;
+    font-size: $font-size-title-22;
+    font-weight: $bold;
+  }
+  &__text{
+    font-size: $font-size-small;
+    font-style: italic;
+
+  }
+}

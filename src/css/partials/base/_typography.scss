@@ -1,0 +1,23 @@
+// @font-face {
+//     font-family: Roboto;
+//     src: url('../fonts/roboto/roboto-regular-webfont.eot');
+//     src: url('../fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+//          url('../fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
+//          url('../fonts/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@include font-face('Open Sans Regular', Open-Sans, Open-Sans-Regular, opensansregular-webfont);
+@include font-face('Open Sans Light', Open-Sans, Open-Sans-Light, opensanslight-webfont);
+@include font-face('Open Sans Semibold', Open-Sans, Open-Sans-Semibold, opensanssemibold-webfont);
+
+@include font-face('Roboto Light', Roboto, Roboto-Light, roboto-light-webfont);
+@include font-face('Roboto Bold', Roboto, Roboto-Bold, roboto-bold-webfont);
+@include font-face('Roboto Black', Roboto, Roboto-Black, roboto-black-webfont);
+
+@include font-face('Font Awesome', Font-Awesome, Font-Awesome, fontawesome-webfont);
+@include font-face('Ionicons', Ionicons, Ionicons, ionicons-webfont);
+@include font-face('Octicons', Octicons, Octicons, octicons-webfont);
+@include font-face('Material Icons', Material-Icons, Material-Icons, materialicons-regular-webfont);

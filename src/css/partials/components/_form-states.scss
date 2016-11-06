@@ -1,0 +1,19 @@
+.has-success{
+  input, textarea{
+    outline: 2px solid $success;
+  }
+}
+.has-error{
+  input, textarea{
+    outline: 2px solid $error;
+  }
+  .help-block{
+    display: block;
+  }
+}
+.help-block{
+  display: none;
+  font-size: $font-size-small;
+}
+
+
