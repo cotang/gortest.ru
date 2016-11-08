@@ -8,8 +8,10 @@ block content
       +b.SECTION.not-found
         +e.img
           img(src='img/broken.png' alt='page-404' title='page-404')
+        +e.H1.title 404
         +e.text Это первая и последняя ошибка в нашей работе
-        +b.A.btn--green(href="page-services.html") Вернуться к услугам
+        +e.btn
+          +b.A.btn--404(href="page-services.html") Вернуться к услугам
 
 
 

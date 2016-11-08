@@ -5,14 +5,18 @@ include ../abstracts/bemto/bemto.pug
 +b.FOOTER.footer
   +e.inner.container
     .row
-      .col-xs-12.col-lg-3
+      .col-xs-12.col-md-6.col-lg-3
         // Logo
-        +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
+        +b.A.logo--footer(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
           img(src="img/logo-footer.png", alt="logo", title="logo", itemprop="logo")
 
-      .col-xs-12.col-lg-2
+      .col-xs-12.col-md-6.col-lg-4.flex-lg-last
+        +e.btn
+          +b.A.btn--footer(href="page-form.html") Рассчитать стоимость
+
+      .col-xs-12.col-md-6.col-lg-2
         // Nav
-        +b.NAV.nav--footer
+        +b.NAV.nav-footer
           +e.UL.list
             +e.item 
               +e.A.link--active(href="index.html") Главная
@@ -25,20 +29,17 @@ include ../abstracts/bemto/bemto.pug
             +e.item
               +e.A.link(href="page-contacts.html") Контакты
 
-      .col-xs-12.col-lg-3
-        +b.contacts-section(itemscope, itemtype="http://schema.org/ContactPoint")
-          // City
-          +e.city(itemprop="areaServed") Санкт-Петербург
-          // Working hours
-          +e.working-hours(itemprop="hoursAvailable") Мы работаем с 9:30 до 18:00
-          // Telephone
-          +e.A.link--tel(href="tel:+78129279411", target="_blank", itemprop="telephone") +7 (812) 927-94-11
-          // E-mail
-          +e.A.link--email(href="mailto:spb@gostest.ru", target="_blank", itemprop="email") spb@gostest.ru
+      .col-xs-12.col-md-6.col-lg-3
+        +b.contacts-section--footer(itemscope, itemtype="http://schema.org/ContactPoint")
+          +e.line 
+            +e.SPAN.city(itemprop="areaServed") Санкт-Петербург
+          +e.line 
+            +e.SPAN.working-hours(itemprop="hoursAvailable") Мы работаем с 9:30 до 18:00
+          +e.line 
+            +e.A.link--tel(href="tel:+78129279411", target="_blank", itemprop="telephone") +7 (812) 927-94-11
+          +e.line 
+            +e.A.link--email(href="mailto:spb@gostest.ru", target="_blank", itemprop="email") spb@gostest.ru
 
-      .col-xs-12.col-lg-4
-        +e.btn
-          +b.A.btn--footer(href="page-calc.html") Рассчитать стоимость
     .row
       .col-xs-12
         +e.copyright © Сертификационный центр "ГорТест". 2008 - 2016
@@ -46,13 +47,19 @@ include ../abstracts/bemto/bemto.pug
 // Fixed sidebar
 +b.ASIDE.sidebar
   // Social links
-  +b.social-links
-    +e.A.link--search(href="#")
-    +e.A.link--rss(href="#")
-    +e.A.link--vk(href="#")
-    +e.A.link--tw(href="#")
-    +e.A.link--fb(href="#")
-    +e.A.link--price(href="#") Узнать стоимость
+  +b.UL.social-links
+    +e.item
+      +e.A.link--search(href="#")
+    +e.item
+      +e.A.link--rss(href="#")
+    +e.item
+      +e.A.link--vk(href="#")
+    +e.item
+      +e.A.link--tw(href="#")
+    +e.item
+      +e.A.link--fb(href="#")
+    +e.item
+      +e.A.link--price(href="page-form.html") Узнать стоимость
   +b.A.up(href="#")
 
 // Overlay

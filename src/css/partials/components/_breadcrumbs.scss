@@ -1,6 +1,7 @@
 .breadcrumbs{
-  font-size: $font-size-small;
-  margin-top: 20px;
+  color: $text-color-white;
+  @include font-family('Open Sans Light', normal, normal);
+  padding: 20px 0 0;
   a{
     margin-right: 10px;
   }

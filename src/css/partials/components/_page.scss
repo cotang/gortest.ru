@@ -1,0 +1,61 @@
+.page{
+  &--form{
+    .content__bg{
+      background-image: url(../img/bg-calc.jpg);      
+    }
+    .content__title{
+      margin: 0;
+      padding-top: 40px;
+      padding-bottom: 130px;
+      @include mq($from:xs, $until:xl){
+        padding-bottom: 60px;
+      } 
+    }
+  }
+  &--faq{
+    .content__bg{
+      background-image: url(../img/bg-faq.jpg);      
+    }
+    .content__title{
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+    .faq__title{
+      display: none;
+    }
+  }
+  &--news{
+    .content__bg{
+      background-image: url(../img/bg-news.jpg);      
+    }
+    .content__title{
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+  }
+  &--single-news, &--glossary, &--single-glossary {
+    .content__bg{
+      background-image: url(../img/bg-calc.jpg);      
+    }
+    .content__title{
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+  }
+  &--single-glossary {
+    .content__text{
+      margin-top: 45px;
+    }
+  }
+
+
+
+
+  &__form{
+    margin: 70px 0;
+  } 
+}
+

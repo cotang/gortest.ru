@@ -4,14 +4,25 @@ include ../abstracts/bemto/bemto.pug
   .container
     +e.H2.title Отзывы
     .row 
-      - for (var i = 0; i < 3; i++){
-        +b.review-item.col-xs-12.col-lg-4(itemscope, itemtype="http://schema.org/Review")       
-          +e.img
-            img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1', itemprop="image")
-          +e.inner
-            +e.H3.title(itemprop="author") ООО “Ника Россия”
-            +e.text(itemprop="reviewBody") Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. 
-      - }
+      +b.review-item--first.col-xs-12.col-md-6.col-xl-4(itemscope, itemtype="http://schema.org/Review")       
+        +e.img
+          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1', itemprop="image")
+        +e.inner
+          +e.H3.title(itemprop="author") ООО “Ника Россия”
+          +e.text(itemprop="reviewBody") Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. 
+      +b.review-item--second.col-xs-12.col-md-6.col-xl-4(itemscope, itemtype="http://schema.org/Review")       
+        +e.img
+          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1', itemprop="image")
+        +e.inner
+          +e.H3.title(itemprop="author") ООО “Ника Россия”
+          +e.text(itemprop="reviewBody") Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. 
+      +b.review-item--third.col-xs-12.col-md-6.col-xl-4(itemscope, itemtype="http://schema.org/Review")       
+        +e.img
+          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1', itemprop="image")
+        +e.inner
+          +e.H3.title(itemprop="author") ООО “Ника Россия”
+          +e.text(itemprop="reviewBody") Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. 
+
 
 
 

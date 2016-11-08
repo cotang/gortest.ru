@@ -14,13 +14,10 @@
     font-size: $font-size-formtitle;
     color: $text-color-white;
     @include font-family('Open Sans Light', normal, normal);
+    letter-spacing: 0.1em;
   }
-  // .form-group{
-  //   margin-left: 35px;
-  //   margin-right: 35px;
-  //   margin-bottom: 20px; 
-  // }
   &__text{
+    color: $text-color-white;
     text-align: left;
     padding: 10px 0 5px;
     margin: 0;
@@ -32,6 +29,7 @@
     width: 100%;
     border: 1px solid $white;
     outline: none;
+    margin-bottom: 20px;
     &::-webkit-input-placeholder{
       color: $text-color-white;         
     }       
@@ -46,6 +44,7 @@
     } 
   }
   &__textarea{
+    vertical-align: top;
     color: $text-color-white;
     background-color: transparent;
     padding: 5px 10px;    
@@ -53,6 +52,7 @@
     border: 1px solid $white;
     height: 75px;
     outline: none;
+    margin-bottom: 20px;
     &::-webkit-input-placeholder{
       color: $text-color-white;         
     }       
@@ -65,22 +65,84 @@
     &:focus::placeholder{
       color: transparent;         
     } 
-  }  
+  } 
+  &__select{
+    padding: 5px 10px; 
+    width: 100%;
+    color: $text-color-white;
+    border: 1px solid $white;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    option{
+      color: $blue;
+    }
+  }
+
+
+
 
 
   &--call{
     .form-group{
       margin-left: 35px;
       margin-right: 35px;
-      padding-bottom: 20px; 
     }
   }
   &--application{
-    padding-bottom: 0;
     .form-group{
       margin-left: 20px;
-      margin-right: 20px;
-      padding-bottom: 20px; 
+      margin-right: 20px; 
+    }
+  }
+  &--question, &--cost{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    .btn--form{
+      margin-top: 10px;
+    }
+    .help-block{
+      margin: 0 0 10px;
+    }
+    .form__input, .form__textarea, .form__select{
+      margin-bottom: 10px;
+    }
+    .form__title{
+      padding-bottom: 10px;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/bg-form.png);
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      opacity: 0.5;
+    }
+
+    .form-group{
+      margin-left: 100px;
+      margin-right: 100px;
+      @include mq($from:xs, $until:lg){
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      &:last-of-type{
+        text-align: right;
+        .btn--form{
+          width: auto;
+          padding: 10px 50px;
+          @include mq($from:xs, $until:sm){
+            padding: 10px 30px;
+          }
+        }
+      }
     }
   }
 }

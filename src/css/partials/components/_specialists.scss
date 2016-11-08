@@ -1,4 +1,7 @@
 .specialists{
+  margin-top: 40px;
+  padding: 60px;
+  background-color: $lightest-grey;
   &__title{
     text-align: center;
     font-size: $font-size-title;
@@ -10,6 +13,9 @@
 .manager{
   color: $darkest-grey;
   position: relative;
+  @include mq($from:xs, $until:md){
+    text-align: center;
+  }  
   &:after{
     content: '';
     width: 1px;
@@ -18,6 +24,9 @@
     top: 0;
     right: 30px;
     background-color: $darkest-grey;
+    @include mq($from:xs, $until:lg){
+      display: none;
+    }
   }
 
   &__photo{
@@ -26,6 +35,9 @@
   &__img{
     width: 150px;
     height: 150px;
+    @include mq($from:xs, $until:md){
+      margin: 0 auto 20px;
+    } 
     img{
       width: 100%;
       height: 100%;
@@ -33,6 +45,11 @@
       object-fit: cover;
       border-radius: 50%;
     }
+  }
+  &__bio{
+    @include mq($from:xs, $until:lg){
+      margin-bottom: 20px;
+    } 
   }
   &__name{
     margin: 0;

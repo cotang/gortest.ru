@@ -6,12 +6,13 @@ block content
     +b.SECTION.best
       .container
         .row.row-xs-bottom
-          .col-xs-12.col-xl-7     
-            +e.H1.title 
-              div Мы лучшие 
-              div в своем классе
-            +e.text На сегодняшний день выдано 10 543 сертификатов
-          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-5.offset-xl-0
+          .col-xs-12.col-lg-7 
+            +e.block
+              +e.H1.title 
+                div Мы лучшие 
+                div в своем классе
+              +e.text На сегодняшний день выдано 10 543 сертификатов
+          .col-xs-12.col-md-8.offset-md-2.col-lg-5.offset-lg-0
             +e.form
               // Form call
               include partials/components/_form--call.pug 
@@ -25,18 +26,18 @@ block content
             +e.H2.title О нас
             +e.text Сертификационная компания «Гортест» успешно оказывает клиентам  услуги по подтверждению качества уже более десяти лет. Опыт наших сотрудников – гарантия  профессионализма. Специалисты «Гортеста»  проконсультируют Вас относительно любых вопросов и в оптимальные сроки осуществят сертификацию, подобрав для Вас  удобную схему и решив все проблемы, возникшие в процессе оформления  бумаг. Нам доверяют крупные известные компании, и в  нашей стране, и за ее пределами.
     // Glossary
-    include partials/components/_glossary.pug 
+    include partials/components/_glossary-dark.pug 
     // FAQ
     include partials/components/_faq.pug 
     // Specialists
     +b.SECTION.specialists
       .container
         .row
-          .col-xs-12.col-xl-6 
+          .col-xs-12.col-lg-6 
             +e.H2.title С вами работает    
             // Manager
             include partials/components/_manager.pug 
-          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-6.offset-xl-0
+          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-0
             +e.specialists__form
               // Form application
               include partials/components/_form--application.pug

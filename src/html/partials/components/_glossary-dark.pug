@@ -1,9 +1,11 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.glossary
++b.SECTION.glossary--dark
   .container
-    +e.line.row
-      .col-xs-12
+    +e.line.row.row-xs-middle
+      .col-xs-12.col-lg-3
+        +e.H2.title Сертификация в деталях
+      .col-xs-12.col-lg-7
         +e.UL.list
           +e.item 
             +e.A.link--active(href="single-glossary.html") А
@@ -63,6 +65,9 @@ include ../abstracts/bemto/bemto.pug
             +e.A.link(href="single-glossary.html") Ю
           +e.item 
             +e.A.link(href="single-glossary.html") Я
+      .col-xs-12.col-lg-2
+        +e.btn
+          +b.A.btn--more(href="page-glossary.html") Все записи
 
     .row
       +b.glossary-excerpt.col-xs-12.col-md-6.col-lg-3
@@ -84,13 +89,3 @@ include ../abstracts/bemto/bemto.pug
         +e.H3.title 
           +e.A.link(href="single-glossary.html") Алкоголь
         +e.text Контроль государства за оборотом алкоголя – обязательное условие гарантий безопасности его потребителей, поэтому и лицензирование, и сертификация алкогольной продукции 
-
-      +b.glossary-excerpt.col-xs-12.col-md-6.col-lg-3
-        +e.H3.title 
-          +e.A.link(href="single-glossary.html") Автомобильные запчасти
-        +e.text От того, насколько качественно изготовлены автомобильные запчасти, может зависеть 
-
-      +b.glossary-excerpt.col-xs-12.col-md-6.col-lg-3
-        +e.H3.title 
-          +e.A.link(href="single-glossary.html") Автосервис
-        +e.text Сертификация автосервиса – это добровольная процедура, которая осуществляется с целью подтверждения качества и безопасности предоставляемых услуг. Это процесс, который

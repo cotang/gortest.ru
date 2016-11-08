@@ -1,0 +1,196 @@
+.nav{
+  position: relative;
+  &__wrapper{
+    @include mq($from:xs, $until:lg){
+      display: none;
+      text-align: center;
+    }    
+  }
+  &__list{    
+    padding-left: 0;
+    margin: 0 0 0 -20px;
+    list-style-type: none;
+    display: flex;
+    font-size: $font-size-menu;
+    @include mq($from:xs, $until:xl){
+      font-size: $font-size;
+    }
+    @include mq($from:xs, $until:lg){
+      flex-wrap: wrap;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
+    &--sticky{
+      margin: 0;
+    }
+  }
+  &__item{
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+    }
+    &--logo{
+      display: none;
+      align-self: center;
+      margin-bottom: 5px;
+      padding-right: 20px;
+    }
+    &--dropdown{
+      .nav__link{
+        &:after{
+          content: '';
+        }    
+      }
+    }
+    &--btn{
+      .nav__link{
+        background-color: $orange;
+        color: $text-color-white; 
+        &:hover, &:focus {
+          background-color: $orange;
+        }    
+      }
+    }
+  }
+
+  &__link{
+    @include font-family('Open Sans Semibold', normal, normal);
+    display: inline-block;
+    padding: 15px 20px; 
+    color: $darker-grey;
+    @include mq($from:lg, $until:xl){
+      padding: 15px 10px;
+    }
+    @include mq($from:xs, $until:lg){
+      padding: 10px;
+    }
+
+    &:hover, &:focus {
+      background-color: $green;
+      color: $text-color-white;
+    }  
+    .icon{
+      &:before{
+        font-size: 0.8em;
+      }
+    }
+  }
+  &__hamburger{
+    display: none;
+    text-align: center;
+    margin: 5px 0;
+    @include mq($from:xs, $until:lg){
+      display: block;
+    }    
+  } 
+}
+.menu-services{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $lighter-grey;
+  &__list{
+    padding-left: 0;
+    margin: 10px 0;
+    list-style-type: none;
+    columns: 3;
+    @include mq($from:xs, $until:md){
+      columns: 1;
+    }
+  }
+  &__item{
+    margin: 0 10px;
+  }
+  &__icon{
+    position: absolute;
+    top: 0.4em;
+    left: 0;
+    use{
+      fill: $green;
+    }
+  }
+  &__title{
+    position: relative;
+    margin: 0;
+    padding: 10px 0 10px 40px;
+    color: $green;
+    @include font-family('Open Sans Light', normal, normal);
+    font-size: $font-size-menu;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size;
+    } 
+  }
+  &__close{
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    right: -10px;
+    color: $text-color;
+    font-size: 1.8em;
+    opacity: 0.5;
+    @include mq($from:xs, $until:xl){
+      right: 30px;
+    } 
+  }
+}
+.menu-services-submenu{
+  @include font-family('Open Sans Light', normal, normal);
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: none;
+  @include mq($from:xs, $until:lg){
+    font-size: $font-size-small;
+  }
+  &__item{
+    position: relative;
+    padding: 5px 0 5px 15px;
+    &:before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      @include sprite($s-chevron);
+    }
+  }
+  &__link{
+    display: inline-block;
+    color: $text-color;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.hamburger{
+  display: inline-block;
+  padding: 17px 6px;
+  // background-color: $menu--border-top;
+  border-radius: 3px;
+  span{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    height: 4px;
+    background-color: $orange;
+
+    &:after, &:before{
+      content: "";
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: $orange;
+    }
+    &:before{
+      transform: translateY(-10px);
+    }    
+    &:after{
+      transform: translateY(6px);
+    }    
+  }
+}

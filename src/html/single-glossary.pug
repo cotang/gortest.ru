@@ -36,7 +36,7 @@ block content
               // Glossary
               +b.SECTION.glossary
                 +e.H2.alphabet Алфавитный рубрикатор 
-                +e.UL.list
+                +e.UL.list--sidebar
                   +e.item 
                     +e.A.link--active(href="page.html") А
                   +e.item 
@@ -100,11 +100,11 @@ block content
     +b.SECTION.specialists
       .container
         .row
-          .col-xs-12.col-xl-6 
+          .col-xs-12.col-lg-6
             +e.H2.title С вами работает    
             // Manager
             include partials/components/_manager.pug 
-          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-6.offset-xl-0
+          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-0
             +e.form
               // Form application
               include partials/components/_form--application.pug

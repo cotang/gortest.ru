@@ -1,6 +1,6 @@
 .faq{
   margin-top: 45px;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
   &__title{
     text-align: center;
@@ -21,6 +21,13 @@
     font-size: $font-size-faq-title;
     @include font-family('Open Sans Light', normal, normal);
     border-top: 1px solid $lighter-grey;
+    &:hover, &:focus{
+      cursor: pointer;
+    }
+
+    @include mq($from:xs, $until:md){
+      font-size: $font-size;
+    }
   }
   &__text{
     border-top: 1px solid $lighter-grey;

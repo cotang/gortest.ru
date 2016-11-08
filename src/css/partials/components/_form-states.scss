@@ -1,19 +1,28 @@
 .has-success{
   input, textarea{
-    outline: 2px solid $success;
+    outline: 1px solid $success;
+    border: 1px solid $success;
   }
 }
 .has-error{
   input, textarea{
-    outline: 2px solid $error;
+    outline: 1px solid $error;
+    border: 1px solid $error;
+    background-color: rgba($error, .25);
   }
   .help-block{
     display: block;
+    // color: $error;
   }
 }
 .help-block{
+  color: $error;
   display: none;
   font-size: $font-size-small;
+  margin: 0 0 20px;
 }
 
-
+.help-block-success{
+  margin-top: 20px;
+  color: $success;
+}

@@ -18,15 +18,15 @@ $grid-gutter-width:           30px !default;
 
 $screen-xs:                   0; // Extra small screen / phone
 $screen-sm:                   480px; // Small screen / phone
-$screen-md:                   760px; // Medium screen / tablet
-$screen-lg:                   980px; // Large screen / desktop
+$screen-md:                   700px; // Medium screen / tablet
+$screen-lg:                   950px; // Large screen / desktop
 $screen-xl:                   1200px; // Extra large screen / wide desktop
 //$screen-xxl:                  1890px; // Super large screen / extra wide desktop
 
 $container-max-widths: (
         sm:                   480px,
-        md:                   760px,
-        lg:                   980px,
+        md:                   700px,
+        lg:                   950px,
         xl:                   1200px
 ) !default;
 
@@ -78,7 +78,7 @@ $dark-grey:                   #444444;
 $grey:                        #999999;
 $light-grey:                  #e9eaf0;
 $lighter-grey:                #eeeeee;
-// $lightest-grey:               #fffbf1;
+$lightest-grey:               #f8f8f8;
 
 $green:                       #00c96d;
 $orange:                      #f98b00;
@@ -116,6 +116,7 @@ $font-family:                   'Open Sans Regular', Helvetica, Arial, sans-seri
 $font-family--light:            'Open Sans Light', Helvetica, Arial, sans-serif;
 $font-family--semibold:         'Open Sans Semibold', Helvetica, Arial, sans-serif;
 
+$font-family--roboto:           'Roboto', Helvetica, Arial, sans-serif;
 $font-family--roboto-light:     'Roboto Light', Helvetica, Arial, sans-serif;
 $font-family--roboto-bold:      'Roboto Bold', Helvetica, Arial, sans-serif;
 $font-family--roboto-black:     'Roboto Black', Helvetica, Arial, sans-serif;
@@ -138,6 +139,8 @@ $font-size-glossary:          15px;
 $font-size-subtitle:          19px;
 $font-size-faq-title:         22px;
 $font-size-manager:           22px;
+$font-size-news-subtitle:     22px;
+$font-size-glossary-letter:   22px;
 
 $font-size-small:             14px;
 $font-size-smallest:          12px;

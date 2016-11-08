@@ -1,188 +1,51 @@
 .header{
   position: relative;
+  &__inner{
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+    }    
+  }
   &__nav{
     border-top: 1px solid $lighter-grey;
     border-bottom: 1px solid $lighter-grey;
+    background-color: $white;
   //   @include mq($from:xs, $until:md){
   //     flex: 0 0 100%;
   //     max-width: 100%;
   //   }
+    &--sticky{
+      position: fixed;
+      z-index: 3;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
   }
   &__search{
-    position: absolute;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: $green;
   }
 }
+
 .logo{
   display: block;
-  margin: 35px 0;
-}
-
-.nav{
-  position: relative;
-  &__list{    
-    padding-left: 0;
-    margin: 0 0 0 -20px;
-    list-style-type: none;
-    display: flex;
-    font-size: $font-size-menu;
-  //   @include mq($from:xs, $until:lg){
-  //     display: none;
-  //     text-align: center;
-  //   }
-  }
-  &__item{
-    &--logo{
-      display: none;
-    }
-    &--dropdown{
-      .nav__link{
-        &:after{
-          content: '';
-        }    
-      }
-    }
-    &--orange{
-      .nav__link{
-        background-color: $orange;
-        color: $text-color-white; 
-        &:hover, &:focus {
-          background-color: $orange;
-        }    
-      }
+  &--header{
+    margin: 35px 0;
+    @include mq($from:xs, $until:lg){
+      margin: 20px 0;
     }
   }
-
-  &__link{
-    @include font-family('Open Sans Semibold', normal, normal);
-    display: inline-block;
-    padding: 15px 20px; 
-    color: $darker-grey;
-
-    &:hover, &:focus {
-      background-color: $green;
-      color: $text-color-white;
-    }  
-    .icon{
-      &:before{
-        font-size: 0.8em;
-      }
-    }
-  }
-  &__hamburger{
-  //   display: none;
-  //   text-align: center;
-  //   margin-bottom: 10px;
-  //   @include mq($from:md, $until:lg){
-  //     position: absolute; 
-  //     top: 20px;
-  //     right: 20px;
-  //   }
-  //   @include mq($from:xs, $until:lg){
-  //     display: block;
-  //   }    
-  // }
-  }
-}
-.menu-services{
-  display: none;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: $white;
-  border: 1px solid $lighter-grey;
-  &__list{
-    padding-left: 0;
+  &--footer{
     margin: 10px 0;
-    list-style-type: none;
-    columns: 3;
-  }
-  &__item{
-    margin: 0 10px;
-  }
-  &__icon{
-    position: absolute;
-    top: 0.4em;
-    left: 0;
-    use{
-      fill: $green;
-    }
-  }
-  &__title{
-    position: relative;
-    margin: 0;
-    padding: 10px 0 10px 40px;
-    color: $green;
-    font-size: $font-size-menu;
-    @include font-family('Open Sans Light', normal, normal);
-  }
-  &__close{
-    position: absolute;
-    top: 0;
-    transform: translateX(100%);
-    right: -10px;
-    color: $text-color;
-    font-size: 1.8em;
-    opacity: 0.5;
-  }
-}
-.menu-services-submenu{
-  padding-left: 20px;
-  margin: 0;
-  list-style-type: none;
-  @include font-family('Open Sans Light', normal, normal);
-  &__item{
-    position: relative;
-    padding: 5px 0 5px 15px;
-    &:before{
-      content: '';
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      left: 0;
-      @include sprite($s-chevron);
-    }
-  }
-  &__link{
-    display: inline-block;
-    color: $text-color;
-    &:hover, &:focus {
-      text-decoration: underline;
+    @include mq($from:xs, $until:lg){
+      margin: 10px 0 30px;
     }
   }
 }
-// .hamburger{
-//   display: inline-block;
-//   padding: 17px 6px;
-//   background-color: $menu--border-top;
-//   border-radius: 3px;
-//   span{
-//     display: block;
-//     width: 30px;
-//     margin: 0 auto;
-//     height: 4px;
-//     background-color: $white;
-
-//     &:after, &:before{
-//       content: "";
-//       display: block;
-//       width: 30px;
-//       height: 4px;
-//       background-color: $white;
-//     }
-//     &:before{
-//       transform: translateY(-10px);
-//     }    
-//     &:after{
-//       transform: translateY(6px);
-//     }    
-//   }
-// }
 
 .search{
   display: none;

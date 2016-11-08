@@ -1,7 +1,7 @@
 extends partials/templates/_template.pug
 
 block content
-  +b.SECTION.page--faq
+  +b.SECTION.page--glossary
 
     // Content
     +b.SECTION.content
@@ -12,28 +12,21 @@ block content
           +b.SECTION.breadcrumbs
               a(href="index.html") Сертификационный центр Гортест
               ='>'
-              span Часто задаваемые вопросы
-          +e.H1.title Часто задаваемые вопросы
+              span Сертификация в деталях
+          +e.H1.title Сертификация в деталях
 
-    // FAQ
-    include partials/components/_faq.pug 
-    
-    .container
-      .row
-        .col-xs-12.col-md-8.offset-md-2
-          +e.form
-            // Form question
-            include partials/components/_form--question.pug
-             
+    // Glossary
+    include partials/components/_glossary.pug 
+
     // Specialists
     +b.SECTION.specialists
       .container
         .row
-          .col-xs-12.col-xl-6 
+          .col-xs-12.col-lg-6 
             +e.H2.title С вами работает    
             // Manager
             include partials/components/_manager.pug 
-          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-6.offset-xl-0
+          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-0
             +e.form
               // Form application
               include partials/components/_form--application.pug
