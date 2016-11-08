@@ -39,6 +39,7 @@
     <link type="text/plain" rel="author" href="humans.txt">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCbFBllrMkXPOoe1YbN3aXTYV0cesewVhc"></script>
   </head>
   <body>
     <!-- Header-->
@@ -46,14 +47,14 @@
       <div class="header__inner">
         <div class="container">
           <div class="row row-xs-middle">
-            <div class="col-xs-12 col-lg-5">
+            <div class="col-xs-12 col-lg-4 col-xl-5">
               <!-- Logo-->
-              <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+              <a class="logo logo--header" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
                 <img src="img/logo.png" alt="logo" title="logo" itemprop="logo">
               </a>
             </div>
-            <div class="col-xs-12 col-lg-6">
-              <div class="contacts-section" itemscope itemtype="http://schema.org/ContactPoint">
+            <div class="col-xs-12 col-lg-8 col-xl-6">
+              <div class="contacts-section contacts-section--header" itemscope itemtype="http://schema.org/ContactPoint">
                 <div class="row">
                   <div class="col-xs-12 col-lg-6">
                     <div class="contacts-section__line">
@@ -80,40 +81,44 @@
       <div class="header__nav">
         <div class="container">
           <!-- Nav-->
-          <nav class="nav nav--header">
+          <nav class="nav">
             <div class="nav__hamburger">
-              <a class="hamburger" href="#"></a>
+              <a class="hamburger" href="#">
+                <span></span>
+              </a>
             </div>
-            <ul class="nav__list">
-              <li class="nav__item nav__item--logo">
-                <img src="img/logo.png" alt="logo" title="logo">
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="page.html">О компании
-                  <span class="icon ion-chevron-down"></span>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link--dropdown" href="page-services.html">Услуги
-                  <span class="icon ion-chevron-down"></span>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="page-news.html">Новости</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="page-cert.html">Сертификация в деталях</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="page-contacts.html">Контакты</a>
-              </li>
-              <li class="nav__item nav__item--orange">
-                <a class="nav__link" href="page-calc.html">Рассчитать стоимость</a>
-              </li>
-            </ul>
+            <div class="nav__wrapper">
+              <ul class="nav__list">
+                <li class="nav__item nav__item--logo">
+                  <img src="img/logo-nav.png" alt="logo" title="logo">
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="page.html">О компании
+                    <span class="icon ion-chevron-down"></span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--dropdown" href="page-services.html">Услуги
+                    <span class="icon ion-chevron-down"></span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="page-news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="page-cert.html">Сертификация в деталях</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="page-contacts.html">Контакты</a>
+                </li>
+                <li class="nav__item nav__item--btn">
+                  <a class="nav__link" href="page-form.html">Рассчитать стоимость</a>
+                </li>
+              </ul>
+            </div>
             <div class="menu-services" itemscope itemtype="http://schema.org/Service">
               <ul class="menu-services__list">
                 <li class="menu-services__item">
@@ -320,14 +325,16 @@
         <section class="best">
           <div class="container">
             <div class="row row-xs-bottom">
-              <div class="col-xs-12 col-xl-7">
-                <h1 class="best__title">
-                  <div>Мы лучшие </div>
-                  <div>в своем классе</div>
-                </h1>
-                <div class="best__text">На сегодняшний день выдано 10 543 сертификатов</div>
+              <div class="col-xs-12 col-lg-7">
+                <div class="best__block">
+                  <h1 class="best__title">
+                    <div>Мы лучшие </div>
+                    <div>в своем классе</div>
+                  </h1>
+                  <div class="best__text">На сегодняшний день выдано 10 543 сертификатов</div>
+                </div>
               </div>
-              <div class="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-5 offset-xl-0">
+              <div class="col-xs-12 col-md-8 offset-md-2 col-lg-5 offset-lg-0">
                 <div class="best__form">
                   <!-- Form call-->
                   <section class="form form--call">
@@ -609,7 +616,7 @@
           </div>
         </section>
         <!-- Glossary-->
-        <section class="glossary">
+        <section class="glossary glossary--dark">
           <div class="container">
             <div class="glossary__line row row-xs-middle">
               <div class="col-xs-12 col-lg-3">
@@ -707,29 +714,31 @@
                 </ul>
               </div>
               <div class="col-xs-12 col-lg-2">
-                <a class="btn btn--more" href="page-glossary.html">Все записи</a>
+                <div class="glossary__btn">
+                  <a class="btn btn--more" href="page-glossary.html">Все записи</a>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="glossary-excerpt col-xs-12 col-lg-3">
+              <div class="glossary-excerpt col-xs-12 col-md-6 col-lg-3">
                 <h3 class="glossary-excerpt__title">
                   <a class="glossary-excerpt__link" href="single-glossary.html">Автомобильные запчасти</a>
                 </h3>
                 <div class="glossary-excerpt__text">От того, насколько качественно изготовлены автомобильные запчасти, может зависеть </div>
               </div>
-              <div class="glossary-excerpt col-xs-12 col-lg-3">
+              <div class="glossary-excerpt col-xs-12 col-md-6 col-lg-3">
                 <h3 class="glossary-excerpt__title">
                   <a class="glossary-excerpt__link" href="single-glossary.html">Автосервис</a>
                 </h3>
                 <div class="glossary-excerpt__text">Сертификация автосервиса – это добровольная процедура, которая осуществляется с целью подтверждения качества и безопасности предоставляемых услуг. Это процесс, который</div>
               </div>
-              <div class="glossary-excerpt col-xs-12 col-lg-3">
+              <div class="glossary-excerpt col-xs-12 col-md-6 col-lg-3">
                 <h3 class="glossary-excerpt__title">
                   <a class="glossary-excerpt__link" href="single-glossary.html">Автошины, покрышки и колеса</a>
                 </h3>
                 <div class="glossary-excerpt__text">Сертификация автошин, покрышек и колес осуществляется в соответствии с Техническим регламентом «О безопасности колесных транспортных средств». В соответствии с</div>
               </div>
-              <div class="glossary-excerpt col-xs-12 col-lg-3">
+              <div class="glossary-excerpt col-xs-12 col-md-6 col-lg-3">
                 <h3 class="glossary-excerpt__title">
                   <a class="glossary-excerpt__link" href="single-glossary.html">Алкоголь</a>
                 </h3>
@@ -820,18 +829,18 @@
         <section class="specialists">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-xl-6">
+              <div class="col-xs-12 col-lg-6">
                 <h2 class="specialists__title">С вами работает </h2>
                 <!-- Manager-->
                 <section class="manager" itemscope itemtype="http://schema.org/Person">
                   <div class="manager__inner row">
-                    <div class="manager__photo col-xs-12 col-xl-4">
+                    <div class="manager__photo col-xs-12 col-md-4 col-lg-12 col-xl-4">
                       <div class="manager__img">
                         <img src="img/manager1.jpg" alt="manager" title="manager" itemprop="image">
                       </div>
                     </div>
-                    <div class="manager__bio col-xs-12 col-xl-6">
-                      <h3 class="manager__name" itemprop="name">Ирина Владимирова </h3>
+                    <div class="manager__bio col-xs-12 col-md-8 col-lg-12 col-xl-6">
+                      <h3 class="manager__name" itemprop="name">Ирина Владимировна </h3>
                       <div class="manager__position" itemprop="jobTitle">менеджер </div>
                       <div class="manager__education" itemprop="alumniOf">
                         <p>Южно-Уральский Государственный Университет</p>
@@ -847,7 +856,7 @@
                   </div>
                 </section>
               </div>
-              <div class="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-0">
+              <div class="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
                 <div class="specialists__form">
                   <!-- Form application-->
                   <section class="form form--application">
@@ -881,7 +890,7 @@
           <div class="container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="row">
-              <div class="review-item col-xs-12 col-lg-4" itemscope itemtype="http://schema.org/Review">
+              <div class="review-item review-item--first col-xs-12 col-md-6 col-xl-4" itemscope itemtype="http://schema.org/Review">
                 <div class="review-item__img">
                   <img src="img/review-logo1.png" alt="review-logo1" title="review-logo1" itemprop="image">
                 </div>
@@ -890,7 +899,7 @@
                   <div class="review-item__text" itemprop="reviewBody">Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. </div>
                 </div>
               </div>
-              <div class="review-item col-xs-12 col-lg-4" itemscope itemtype="http://schema.org/Review">
+              <div class="review-item review-item--second col-xs-12 col-md-6 col-xl-4" itemscope itemtype="http://schema.org/Review">
                 <div class="review-item__img">
                   <img src="img/review-logo1.png" alt="review-logo1" title="review-logo1" itemprop="image">
                 </div>
@@ -899,7 +908,7 @@
                   <div class="review-item__text" itemprop="reviewBody">Хотел продавать мед в магазины - потребовали документы о качестве. Обратился в Гортест, тут провели все проверки и выдали мне нужный сертификат. Просто спасли! Отдельная Благодарность менеджеру Юлии. </div>
                 </div>
               </div>
-              <div class="review-item col-xs-12 col-lg-4" itemscope itemtype="http://schema.org/Review">
+              <div class="review-item review-item--third col-xs-12 col-md-6 col-xl-4" itemscope itemtype="http://schema.org/Review">
                 <div class="review-item__img">
                   <img src="img/review-logo1.png" alt="review-logo1" title="review-logo1" itemprop="image">
                 </div>
@@ -914,7 +923,7 @@
         <!-- Clients-->
         <section class="clients">
           <div class="container">
-            <h2 class="clients__title">Отзывы</h2>
+            <h2 class="clients__title">С нами работают</h2>
             <div class="row">
               <div class="col-xs-12">
                 <div class="clients__gallery">
@@ -988,24 +997,26 @@
           <div class="container">
             <h2 class="contacts__title">Контакты:</h2>
             <div class="row">
-              <div class="col-xs-12 col-xl-7">
-                <div class="contacts__map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.977519681184!2d60.612608316131734!3d56.82917491592866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e92362391ed%3A0xdebbb22cfed8d2ca!2z0YPQuy4g0KDQvtC30Ysg0JvRjtC60YHQtdC80LHRg9GA0LMsIDUxLCDQldC60LDRgtC10YDQuNC90LHRg9GA0LMsINCh0LLQtdGA0LTQu9C-0LLRgdC60LDRjyDQvtCx0LsuLCA2MjAwMjY!5e0!3m2!1sru!2sru!4v1472217833130"
-                    frameborder="0" style="border:0" allowfullscreen> </iframe>
-                </div>
+              <div class="col-xs-12 col-lg-7">
+                <div class="contacts__map"></div>
               </div>
-              <div class="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-5 offset-xl-0">
-                <div class="contacts-section" itemscope itemtype="http://schema.org/ContactPoint">
-                  <!-- Address-->
-                  <div class="contacts-section__address" itemprop="areaServed">Станция метро: "Петроградская", ул. Профессора Попова, д. 23, 4 эт., оф. 407 (вход с проспекта Медиков, вывеска "офисный центр")</div>
-                  <!-- E-mail-->
-                  <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
-                  <!-- Fax-->
-                  <a class="contacts-section__link contacts-section__link--tel" href="tel:+78126330516" target="_blank" itemprop="faxNumber">+7 (812) 633-05-16</a>
-                  <!-- Telephone-->
-                  <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
-                  <!-- Working hours-->
-                  <div class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00 по местному времени</div>
+              <div class="col-xs-12 col-lg-5">
+                <div class="contacts-section contacts-section--map" itemscope itemtype="http://schema.org/ContactPoint">
+                  <div class="contacts-section__line">
+                    <span class="contacts-section__address" itemprop="areaServed">Станция метро: "Петроградская", ул. Профессора Попова, д. 23, 4 эт., оф. 407 (вход с проспекта Медиков, вывеска "офисный центр")</span>
+                  </div>
+                  <div class="contacts-section__line">
+                    <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
+                  </div>
+                  <div class="contacts-section__line">
+                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78126330516" target="_blank" itemprop="faxNumber">+7 (812) 633-05-16</a>
+                  </div>
+                  <div class="contacts-section__line">
+                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
+                  </div>
+                  <div class="contacts-section__line">
+                    <span class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00 по местному времени</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1017,49 +1028,53 @@
     <footer class="footer">
       <div class="footer__inner container">
         <div class="row">
-          <div class="col-xs-12 col-lg-3">
+          <div class="col-xs-12 col-md-6 col-lg-3">
             <!-- Logo-->
-            <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+            <a class="logo logo--footer" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
               <img src="img/logo-footer.png" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
-          <div class="col-xs-12 col-lg-2">
+          <div class="col-xs-12 col-md-6 col-lg-4 flex-lg-last">
+            <div class="footer__btn">
+              <a class="btn btn--footer" href="page-form.html">Рассчитать стоимость</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-2">
             <!-- Nav-->
-            <nav class="nav nav--footer">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link nav__link--active" href="index.html">Главная</a>
+            <nav class="nav-footer">
+              <ul class="nav-footer__list">
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link nav-footer__link--active" href="index.html">Главная</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="page.html">О компании</a>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="page.html">О компании</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="page-services.html">Услуги</a>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="page-services.html">Услуги</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="page-news.html">Новости</a>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="page-news.html">Новости</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="page-contacts.html">Контакты</a>
+                <li class="nav-footer__item">
+                  <a class="nav-footer__link" href="page-contacts.html">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="col-xs-12 col-lg-3">
-            <div class="contacts-section" itemscope itemtype="http://schema.org/ContactPoint">
-              <!-- City-->
-              <div class="contacts-section__city" itemprop="areaServed">Санкт-Петербург</div>
-              <!-- Working hours-->
-              <div class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00</div>
-              <!-- Telephone-->
-              <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
-              <!-- E-mail-->
-              <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-lg-4">
-            <div class="footer__btn">
-              <a class="btn btn--footer" href="page-calc.html">Рассчитать стоимость</a>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="contacts-section contacts-section--footer" itemscope itemtype="http://schema.org/ContactPoint">
+              <div class="contacts-section__line">
+                <span class="contacts-section__city" itemprop="areaServed">Санкт-Петербург</span>
+              </div>
+              <div class="contacts-section__line">
+                <span class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00</span>
+              </div>
+              <div class="contacts-section__line">
+                <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
+              </div>
+              <div class="contacts-section__line">
+                <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1073,14 +1088,26 @@
     <!-- Fixed sidebar-->
     <aside class="sidebar">
       <!-- Social links-->
-      <div class="social-links">
-        <a class="social-links__link social-links__link--search" href="#"></a>
-        <a class="social-links__link social-links__link--rss" href="#"></a>
-        <a class="social-links__link social-links__link--vk" href="#"></a>
-        <a class="social-links__link social-links__link--tw" href="#"></a>
-        <a class="social-links__link social-links__link--fb" href="#"></a>
-        <a class="social-links__link social-links__link--price" href="#">Узнать стоимость</a>
-      </div>
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--search" href="#"></a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--rss" href="#"></a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--vk" href="#"></a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--tw" href="#"></a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--fb" href="#"></a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--price" href="page-form.html">Узнать стоимость</a>
+        </li>
+      </ul>
       <a class="up" href="#"></a>
     </aside>
     <!-- Overlay-->
