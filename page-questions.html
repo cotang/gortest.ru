@@ -365,43 +365,122 @@
       </div>
     </header>
     <main>
-      <section class="page page--contacts">
+      <section class="page page--questions">
         <!-- Content-->
         <section class="content">
-          <div class="container">
-            <!-- Breadcrumbs-->
-            <section class="breadcrumbs">
-              <a href="index.html">Сертификационный центр Гортест</a>&gt;
-              <span>Контакты</span>
-            </section>
+          <div class="content__bg">
+            <div class="container">
+              <!-- Breadcrumbs-->
+              <section class="breadcrumbs">
+                <a href="index.html">Сертификационный центр Гортест</a>&gt;
+                <span>Вопросы и ответы</span>
+              </section>
+              <h1 class="content__title">Вопросы и ответы</h1>
+            </div>
           </div>
         </section>
-        <!-- Contacts-->
-        <section class="contacts">
+        <div class="page__form">
           <div class="container">
-            <h2 class="contacts__title">Контакты:</h2>
             <div class="row">
-              <div class="col-xs-12 col-lg-7">
-                <div class="contacts__map"></div>
+              <div class="col-xs-12 col-md-8 offset-md-2">
+                <!-- Form question-->
+                <section class="form form--question">
+                  <form action="" method="">
+                    <h3 class="form__title">Задать вопрос</h3>
+                    <div class="form-group field-name">
+                      <input class="form__input" type="text" name="Имя" placeholder="Ваше имя:" />
+                      <p class="help-block">Ошибка заполнения поля формы</p>
+                    </div>
+                    <div class="form-group field-tel-email required">
+                      <input class="form__input" type="text" name="Телефон/email" placeholder="Телефон или эл.почта:*" />
+                      <p class="help-block">Ошибка заполнения поля формы</p>
+                    </div>
+                    <div class="form-group field-question required">
+                      <textarea class="form__textarea" type="text" name="Вопрос" placeholder="Ваш вопрос:*"></textarea>
+                      <p class="help-block">Ошибка заполнения поля формы</p>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn--form" type="submit">Задать вопрос</button>
+                      <p class="help-block help-block-success">Ваш вопрос отправлен</p>
+                    </div>
+                  </form>
+                </section>
               </div>
-              <div class="col-xs-12 col-lg-5">
-                <div class="contacts-section contacts-section--map" itemscope itemtype="http://schema.org/ContactPoint">
-                  <div class="contacts-section__line">
-                    <span class="contacts-section__address" itemprop="areaServed">Станция метро: "Петроградская", ул. Профессора Попова, д. 23, 4 эт., оф. 407 (вход с проспекта Медиков, вывеска "офисный центр")</span>
+            </div>
+          </div>
+        </div>
+        <!-- Questions-->
+        <section class="questions">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-8 offset-md-2">
+                <article class="question" itemscope itemtype="http://schema.org/Article">
+                  <h2 class="question__subtitle">
+                    <a href="single-question.html" itemprop="headline">Сертификация картонных конструкций (h2) </a>
+                  </h2>
+                  <div class="question__ask" itemprop="articleSection" itemscope itemtype="http://schema.org/Question">
+                    <div class="question__person">
+                      <div class="question__name" itemprop="author">Дарья </div>(Санкт-Петербург и Ленинградская область, 1 ноября 2016) </div>
+                    <div class="question__text" itemprop="citation">
+                      <p>Добрый день!</p>
+                      <p>Интересует следующий вопрос. Хотим с мужем открыть свой бизнес по изготовлению и продаже картонных конструкций для животных в связи с этим интересуюсь:</p>
+                      <ol>
+                        <li>Какие требования предъявляются к изготовлению данного объекта?</li>
+                        <li>Нужно ли согласовывать деятельность с Роспотребнадзором?</li>
+                        <li>Какие сопроводительные документы необходимы для продажи объекта?</li>
+                        <li>Стоимость Ваших услуг за организацию данных формальностей?</li>
+                      </ol>
+                    </div>
                   </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
+                  <a class="question__link" href="single-question.html">Читать ответ</a>
+                </article>
+                <article class="question" itemscope itemtype="http://schema.org/Article">
+                  <h2 class="question__subtitle">
+                    <a href="single-question.html" itemprop="headline">Сертификация картонных конструкций (h2) </a>
+                  </h2>
+                  <div class="question__ask" itemprop="articleSection" itemscope itemtype="http://schema.org/Question">
+                    <div class="question__person">
+                      <div class="question__name" itemprop="author">Дарья </div>(Санкт-Петербург и Ленинградская область, 1 ноября 2016) </div>
+                    <div class="question__text" itemprop="citation">
+                      <p>Добрый день!</p>
+                      <p>Интересует следующий вопрос. Хотим с мужем открыть свой бизнес по изготовлению и продаже картонных конструкций для животных в связи с этим интересуюсь:</p>
+                      <ol>
+                        <li>Какие требования предъявляются к изготовлению данного объекта?</li>
+                        <li>Нужно ли согласовывать деятельность с Роспотребнадзором?</li>
+                        <li>Какие сопроводительные документы необходимы для продажи объекта?</li>
+                        <li>Стоимость Ваших услуг за организацию данных формальностей?</li>
+                      </ol>
+                    </div>
                   </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78126330516" target="_blank" itemprop="faxNumber">+7 (812) 633-05-16</a>
+                  <a class="question__link" href="single-question.html">Читать ответ</a>
+                </article>
+                <article class="question" itemscope itemtype="http://schema.org/Article">
+                  <h2 class="question__subtitle">
+                    <a href="single-question.html" itemprop="headline">Сертификация картонных конструкций (h2) </a>
+                  </h2>
+                  <div class="question__ask" itemprop="articleSection" itemscope itemtype="http://schema.org/Question">
+                    <div class="question__person">
+                      <div class="question__name" itemprop="author">Дарья </div>(Санкт-Петербург и Ленинградская область, 1 ноября 2016) </div>
+                    <div class="question__text" itemprop="citation">
+                      <p>Добрый день!</p>
+                      <p>Интересует следующий вопрос. Хотим с мужем открыть свой бизнес по изготовлению и продаже картонных конструкций для животных в связи с этим интересуюсь:</p>
+                      <ol>
+                        <li>Какие требования предъявляются к изготовлению данного объекта?</li>
+                        <li>Нужно ли согласовывать деятельность с Роспотребнадзором?</li>
+                        <li>Какие сопроводительные документы необходимы для продажи объекта?</li>
+                        <li>Стоимость Ваших услуг за организацию данных формальностей?</li>
+                      </ol>
+                    </div>
                   </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
-                  </div>
-                  <div class="contacts-section__line">
-                    <span class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00 по местному времени</span>
-                  </div>
-                </div>
+                  <a class="question__link" href="single-question.html">Читать ответ</a>
+                </article>
+                <section class="pagination">
+                  <a class="pagination__arrow pagination__arrow--prev" href="page-news.html"> </a>
+                  <a class="pagination__number pagination__number--current" href="page-news.html">1</a>
+                  <a class="pagination__number" href="page-news.html">2</a>
+                  <a class="pagination__number" href="page-news.html">3</a>
+                  <a class="pagination__arrow pagination__arrow--next" href="page-news.html"> </a>
+                </section>
               </div>
             </div>
           </div>
