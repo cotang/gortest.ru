@@ -4363,8 +4363,7 @@ img {
 .social-links {
   padding-left: 0;
   margin: 10px 0 0;
-  list-style-type: none;
-  position: relative; }
+  list-style-type: none; }
   .social-links__item {
     padding: 15px 10px; }
   .social-links__link {
@@ -4396,14 +4395,12 @@ img {
       width: 17px;
       height: 17px; }
     .social-links__link--price {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      -ms-transform: rotate(-90deg) translateX(-120px);
-          transform: rotate(-90deg) translateX(-120px);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
       width: 100%;
       white-space: nowrap;
       display: inline-block;
+      direction: rtl;
       color: #f98b00; }
 
 .up {
@@ -4629,7 +4626,7 @@ img {
     margin-bottom: 25px; }
 
 .services-type {
-  height: 270px;
+  min-height: 270px;
   border: 4px solid transparent;
   border-radius: 5px; }
   .services-type--question {
