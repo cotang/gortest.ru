@@ -22,7 +22,7 @@
     line-height: 1;
     margin: 20px 0;
     @include mq($from:xs, $until:md){
-      font-size: $font-size-title;
+      font-size: $font-size-service-title;
     }
   }
   &__text{

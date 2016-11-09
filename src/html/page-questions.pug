@@ -1,7 +1,7 @@
 extends partials/templates/_template.pug
 
 block content
-  +b.SECTION.page--faq
+  +b.SECTION.page--questions
 
     // Content
     +b.SECTION.content
@@ -12,18 +12,18 @@ block content
           +b.SECTION.breadcrumbs
               a(href="index.html") Сертификационный центр Гортест
               ='>'
-              span Часто задаваемые вопросы
-          +e.H1.title Часто задаваемые вопросы
-
-    // FAQ
-    include partials/components/_faq.pug 
+              span Вопросы и ответы
+          +e.H1.title Вопросы и ответы
     
-    +e.page__form
+    +e.form
       .container
         .row
           .col-xs-12.col-md-8.offset-md-2          
             // Form question
             include partials/components/_form--question.pug
+
+    // Questions
+    include partials/components/_questions.pug 
              
     // Specialists
     +b.SECTION.specialists

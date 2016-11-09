@@ -1,5 +1,5 @@
 .contacts{
-  padding-top: 60px;
+  padding-top: 50px;
   @include mq($from:xs, $until:lg){
     padding-top: 40px;
   }

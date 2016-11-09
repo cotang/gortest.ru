@@ -6,7 +6,7 @@
 @import "vendor/normalize";
 @import "vendor/mq";
 @import "vendor/slick";
-@import "vendor/ionicons/scss/ionicons";
+@import "vendor/ionicons/ionicons";
 
 // Abstracts
 // @import "partials/abstracts/functions";
@@ -53,6 +53,7 @@
 @import "partials/components/contacts";
 @import "partials/components/not-found";
 @import "partials/components/news";
+@import "partials/components/questions";
 // @import "partials/components/city";
 // @import "partials/components/promo";
 // @import "partials/components/cost";
@@ -79,6 +80,6 @@
 // @import "partials/components/office";
 
 
-// @import "partials/components/question";
+
 
 

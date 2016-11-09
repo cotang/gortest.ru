@@ -1,6 +1,9 @@
 .clients{
-  padding-bottom: 50px;
-  margin-top: 120px;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $lightest-grey;
+
   @include mq($from:xs, $until:lg){
     margin-top: 40px;
   }

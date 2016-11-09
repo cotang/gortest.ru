@@ -38,6 +38,10 @@
     }
     .glossary-excerpt__link{
       color: $text-color-white;
+      &:hover, &:focus {
+        color: $text-color-white;
+        // text-decoration: none;
+      }  
     }    
   }
 
@@ -129,6 +133,7 @@
     color: $blue;
       &:hover, &:focus {
       color: $green;
+      // text-decoration: none;
     }
   }
   &__text{

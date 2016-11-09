@@ -1,4 +1,5 @@
 .services{
+  background-color: $lightest-grey;
   margin-top: 50px;
   @include mq($from:xs, $until:lg){
     margin-top: 20px;
@@ -28,6 +29,7 @@
 }
 
 .services-type{
+  background-color: $white;
   min-height: 270px;
   // height: 100%;
   border: 4px solid transparent;
@@ -69,7 +71,7 @@
   &__title{
     @include font-family('Open Sans Semibold', normal, normal);
     font-size: $font-size-subtitle;
-    padding: 10px 0 5px 60px;
+    padding: 10px 0 5px 55px;
     margin: 0;
     color: $green;
     position: relative;
@@ -96,6 +98,7 @@
     @include font-family('Open Sans Light', normal, normal);    
   }
   &__item{
+    // display: none;
     position: relative;
     padding: 5px 5px 5px 15px;
     &:before{
@@ -108,9 +111,10 @@
     }
 
     &--hidden{
-      display: none;
+      // display: none;
     }
     &--more{
+
       padding-left: 0;
       text-align: center; 
       font-size: $font-size-text;     
@@ -121,6 +125,13 @@
         color: $blue;
         text-decoration: underline;
       }
+    }
+  }
+  &__title-link{
+    // display: inline-block;
+    // color: $green;
+    &:hover, &:focus {
+      text-decoration: underline;
     }
   }
   &__link{

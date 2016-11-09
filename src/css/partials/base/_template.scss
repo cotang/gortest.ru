@@ -32,6 +32,7 @@ a {
   @include transition();
 
   &:hover, &:focus {
+    text-decoration: underline;
     // color: $link-color--hover;
   }
 }

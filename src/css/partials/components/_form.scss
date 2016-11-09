@@ -30,6 +30,9 @@
     border: 1px solid $white;
     outline: none;
     margin-bottom: 20px;
+    &:focus{
+      box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.5);
+    }
     &::-webkit-input-placeholder{
       color: $text-color-white;         
     }       
@@ -53,6 +56,9 @@
     height: 75px;
     outline: none;
     margin-bottom: 20px;
+    &:focus{
+      box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    }
     &::-webkit-input-placeholder{
       color: $text-color-white;         
     }       
@@ -105,9 +111,9 @@
     .help-block{
       margin: 0 0 10px;
     }
-    .form__input, .form__textarea, .form__select{
-      margin-bottom: 10px;
-    }
+    // .form__input, .form__textarea, .form__select{
+    //   margin-bottom: 10px;
+    // }
     .form__title{
       padding-bottom: 10px;
     }

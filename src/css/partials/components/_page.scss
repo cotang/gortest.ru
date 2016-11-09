@@ -12,7 +12,7 @@
       } 
     }
   }
-  &--faq{
+  &--faq, &--questions{
     .content__bg{
       background-image: url(../img/bg-faq.jpg);      
     }
@@ -24,6 +24,9 @@
     .faq__title{
       display: none;
     }
+    .faq__btn{
+      display: none;
+    }    
   }
   &--news{
     .content__bg{

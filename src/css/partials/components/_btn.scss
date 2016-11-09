@@ -3,7 +3,7 @@
   border: none;
   outline: none;
   border-radius: 3px; 
-  background-color: $orange-btn;
+  background-color: $orange;
   color: $text-color-white;
   @include font-family('Open Sans Semibold', normal, normal);  
   font-size: $font-size-btn; 
@@ -13,6 +13,7 @@
   &:hover, &:focus, &:active{
     color: $text-color-white;
     text-decoration: none;
+    background-color: $orange-btn-hover;
   }
 
   &--form{
@@ -23,6 +24,7 @@
     text-transform: none;
   }
   &--more{
+    border: 1px solid $dark-violet;
     background-color: $white;
     color: $dark-violet;
     @include font-family('Open Sans Regular', normal, normal); 
@@ -30,6 +32,7 @@
     &:hover, &:focus, &:active{
       color: $dark-violet;
       text-decoration: underline;
+      background-color: $white;
     }
   } 
   &--footer{

@@ -83,8 +83,7 @@ jQuery(document).ready(function($){
   var headerInner = $('.header__inner');
   var headerNav = $('.header__nav'); 
   var navList = $('.nav__list');
-  var navItemLogo = $(navList).find('.nav__item--logo');
-  var navItemBtn = $(navList).find('.nav__item--btn');      
+  var navItemLogo = $(navList).find('.nav__item--logo');  
 
   $(window).scroll(function () {
     if ($(window).width() > 768) {
@@ -92,12 +91,10 @@ jQuery(document).ready(function($){
         $(headerNav).addClass('header__nav--sticky');
         $(navList).addClass('nav__list--sticky');
         $(navItemLogo).show();
-        $(navItemBtn).hide();
       } else {
         $(headerNav).removeClass('header__nav--sticky');
         $(navList).removeClass('nav__list--sticky');
         $(navItemLogo).hide();
-        $(navItemBtn).show();
       }
     }
   });
@@ -118,215 +115,57 @@ jQuery(document).ready(function($){
   // }
 
 
+  var servicesBlock = $('.services__block');
+  /* Цикл по всем блокам */
+  $(servicesBlock).each(function(i, el){
+
+      var servicesType = $(el).find('.services-type');
+      var servicesTypeMinHeight = parseInt( $(servicesType).css('min-height'));  
+      var servicesTitle = $(servicesType).find('.services-type__title');
+      var currentHeight = $(servicesTitle).outerHeight();
+          currentHeight = currentHeight + 10; /* margin-top у ul*/
+      var servicesTypeList = $(servicesType).find('.services-type__list');
+      var servicesTypeItem = $(servicesTypeList).find('.services-type__item'); 
+
+      /* Скрытие элементов которые не влезают в 270px */
+      $(servicesTypeItem).each(function(indx, element){          
+        currentHeight+= $(element).outerHeight();  
+        if (currentHeight > servicesTypeMinHeight) {
+          $(element).hide();
+        }        
+      });
+
+      /* Добавление строки 'Еще n услуг' */
+      if (currentHeight > servicesTypeMinHeight) {
+        $(servicesTypeList).find('.services-type__item:visible:last').hide();
+        var numHidden = $(servicesTypeList).find('.services-type__item:hidden').length;
+        var word;
+        if (numHidden >= 11 && numHidden <= 20){ 
+          word = 'услуг';
+        } else {
+          if (numHidden%10 == 1){
+            word = 'услуга';
+          } else if (numHidden%10 == 2 || numHidden%10 == 3 || numHidden%10 == 4){          
+            word = 'услуги';
+          } else {
+            word = 'услуг';
+          }
+        }
+        $('<li class="services-type__item services-type__item--more"><a class="services-type__link" href="#">Еще ' +numHidden+ ' ' +word+' </a></li>').appendTo($(servicesTypeList));
+        /* Добавление строк по клику */
+        var servicesMoreLink = $(servicesTypeList).find('.services-type__item--more .services-type__link');
+        $(servicesMoreLink).click(function(e) { 
+            e.preventDefault();
+            $(this).closest('.services-type__list').find('.services-type__item:hidden').show();
+            $(this).closest('.services-type__item--more').hide();
+        });
+      }
+
+  });
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  // /* hamburger - product-type */
-  // $('.hamburger').click(function(e) { 
-  //     e.preventDefault();    
-  //     $('.menu-dropdown--product-type').show();
-  // });
-  // /* menu - document-type */
-  // $('.document-type-menu__link').click(function(e) { 
-  //     e.preventDefault();    
-  //     $('.menu-dropdown--document-type').show();
-  // });
-  // $('.menu-dropdown__close').click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).closest('.menu-dropdown').hide();
-  // });
-
-  // /* Timeline - tabs */
-  // $('.timeline__item').on('click', function() {
-  //   $(this).closest('.timeline').find('.timeline__item').removeClass('timeline__item--active');
-  //   $(this).addClass('timeline__item--active'); 
-  //   var id = $(this).attr('class');
-  //   var id = id.replace(/\D/g, "");
-  //   var idText = '.timeline__description--' + id;
-  //   $(this).closest('.timeline').find($('.timeline__description')).removeClass('timeline__description--active');   
-  //   $(idText).addClass('timeline__description--active'); 
-  // }); 
-
-  // /* галерея "специалисты" */
-  // $('.specialists__gallery').slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 8000,
-  //   centerMode: true,
-  //   centerPadding: '0'
-  // });
-
-  // /* галерея "другие документы" */
-  // $('.other-docs__gallery').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   centerPadding: '0',
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-
-
-  // /* галерея "другие документы" */
-  // $('.gratitude__gallery').slick({
-  //   infinite: true,
-  //   arrows: false,
-  //   dots: true,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   centerPadding: '0',
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-
-
-
-
-  // /* Form in the modal window */
-  // $('.btn[data-form]').click( function(e){
-  //   e.preventDefault(); 
-  //   var suffix = $(this).data("form"); 
-  //   var overlay = $('.overlay');
-  //   $('body').css({"overflow":"hidden"});   
-  //   $(overlay).show();
-  //   var formClass = '.form--' + suffix;
-  //   $(overlay).find(formClass).fadeIn();    
-  // });
-  // /* Close the modal window */
-  // $('.form__close').click( function(e){ 
-  //   e.preventDefault();
-  //   var overlay = $('.overlay'); 
-  //   $('body').css({"overflow":"auto"});
-  //   $(overlay).find(".form").fadeOut();
-  //   $(overlay).fadeOut(400);
-  // });
-
-  // /* Название документа в блоке Compulsory docs в textarea в всплывающей форме */
-  // $('.compulsory-docs .btn').click(function(){
-  //     var doc = $(this).closest('.compulsory-docs__item').find('.compulsory-docs__caption').text();
-  //     $('.overlay .form--application .form__textarea').text(doc);
-  // });
-
-  // /* Значение data-id в блоке branches в textarea в всплывающей форме */
-  // $('.btn--branches').click(function(){
-  //     var value = $(this).data('id');
-  //     $('.overlay .form--application .form__textarea').text("Пакет документов для отрасли: "+value);
-  // });
-
-  // /* одинаковая высота у promo__title */
-  // var promoTitleMaxHeight = 0;
-  // var promoTitleItem = $(".promo__title");
-  // $(promoTitleItem).each(function(){
-  //  if ( $(this).height() > promoTitleMaxHeight ) 
-  //  {
-  //   promoTitleMaxHeight = $(this).height();
-  //  }
-  // });
-  // $(promoTitleItem).height(promoTitleMaxHeight);
-  // /* одинаковая высота у promo__text */
-  // var promoTextMaxHeight = 0;
-  // var promoTextItem = $(".promo__text");
-  // $(promoTextItem).each(function(){
-  //  if ( $(this).height() > promoTextMaxHeight ) 
-  //  {
-  //   promoTextMaxHeight = $(this).height();
-  //  }
-  // });
-  // $(promoTextItem).height(promoTextMaxHeight);
-
-  // /* Review in the modal window */
-  // $('.reviews__img').click( function(e){ 
-  //   e.preventDefault(); 
-  //   $('body').css({"overflow":"hidden"});   
-  //   $('.overlay').show();
-  //   $(this).closest('.reviews__slide').find('.reviews__modal').clone().appendTo($('.overlay'))
-  //   .show()
-  //   .animate({opacity: 1}, 200); 
-  // });
-  // /* Close the modal window */
-  // $('.overlay').click( function(){ 
-  //   $('body').css({"overflow":"auto"});
-  //   $(this).find('.reviews__modal')
-  //     .animate({opacity: 0}, 200,  
-  //       function(){
-  //         $(this).hide();
-  //         $('.overlay').fadeOut(400);
-  //       }
-  //     );
-  // }); 
-
-  // /* галерея "отзывов" */
-  // $('.reviews__gallery').slick({
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   centerPadding: '0', 
-  //   variableWidth: true,     
-  //   responsive: [
-  //     {
-  //       breakpoint: 1040,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-
-
-  // /* плавный скролл в page-reviews */
-  // $('.page--reviews .content__link').click(function(e){
-  //     e.preventDefault();
-  //     var el = $(this).attr('href');
-  //     $('body').animate({
-  //     scrollTop: $(el).offset().top}, 500);
-  //     return false;
-  // });
 
     /* Map */
     var map = new GMaps({
