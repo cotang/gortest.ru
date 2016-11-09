@@ -4473,6 +4473,14 @@ img {
 .page--single-glossary .content__text {
   margin-top: 45px; }
 
+.page--single-service .content__title {
+  color: #00c96d;
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 45px;
+  margin: 20px 0; }
+
 .page__form {
   margin: 70px 0; }
 
@@ -4486,6 +4494,14 @@ img {
   font-style: normal;
   font-size: 60px;
   color: #ffffff; }
+
+.content__description {
+  margin: 20px 0; }
+
+.content__img {
+  margin-top: 20px; }
+  .content__img img {
+    width: 100%; }
 
 .content__text {
   font-size: 17px;
@@ -4506,6 +4522,11 @@ img {
     font-size: 20px; }
   .content__text h5, .content__text h6 {
     font-size: 19px; }
+  .content__text ul {
+    border-radius: 5px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    background-color: #e9eaf0; }
   .content__text blockquote {
     margin-left: 20px;
     padding-left: 20px;
@@ -4524,6 +4545,8 @@ img {
   .breadcrumbs span {
     display: inline-block;
     margin-left: 10px; }
+  .breadcrumbs--dark {
+    color: #343e47; }
 
 .pagination {
   margin-top: 10px;
@@ -4861,7 +4884,8 @@ img {
 
 .specialists {
   margin-top: 40px;
-  padding: 60px;
+  padding-top: 60px;
+  margin-bottom: 60px;
   background-color: #f8f8f8; }
   .specialists__title {
     text-align: center;
