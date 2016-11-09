@@ -18,7 +18,7 @@ mixin form(items)
             +e.INPUT.input(type='text', name='Телефон/email', placeholder="Телефон или эл.почта:*")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-comment.required
-            +e.TEXTAREA.textarea(name='Комментарий', placeholder="Комментарий:*") 
+            +e.TEXTAREA.textarea(name='Необходимый документ', placeholder="Необходимый документ:*") 
             p.help-block Ошибка заполнения поля формы
             
         if item.name == 'call'
@@ -28,9 +28,9 @@ mixin form(items)
           .form-group.field-tel-email.required
             +e.INPUT.input(type='text', name='Телефон/email', placeholder="Телефон или эл.почта:*")
             p.help-block Ошибка заполнения поля формы
-          .form-group.field-comment.required
-            +e.TEXTAREA.textarea(name='Комментарий', placeholder="Комментарий:*") 
-            p.help-block Ошибка заполнения поля формы
+          //- .form-group.field-comment.required
+          //-   +e.TEXTAREA.textarea(name='Комментарий', placeholder="Комментарий:*") 
+          //-   p.help-block Ошибка заполнения поля формы
 
         if item.name == 'question'
           .form-group.field-name
@@ -99,3 +99,5 @@ mixin form(items)
         .form-group
           +b.BUTTON.btn--form(type='submit') #{item.button}
           p.help-block.help-block-success #{item.success}
+
+
