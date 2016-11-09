@@ -12,4 +12,8 @@
     display: inline-block;
     margin-left: 10px;
   }
+
+  &--dark{
+    color: $text-color;
+  }
 }

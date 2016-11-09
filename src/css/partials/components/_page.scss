@@ -50,7 +50,14 @@
       margin-top: 45px;
     }
   }
-
+  &--single-service {
+    .content__title{
+      color: $green;
+      @include font-family('Roboto Bold', normal, normal);
+      font-size: $font-size-service-title;
+      margin: 20px 0;
+    }
+  }
 
 
 
