@@ -37,7 +37,6 @@ include ../abstracts/bemto/bemto.pug
               +e.A.link(href="index.html") Главная
             +e.item 
               +e.A.link(href="page.html") О компании
-                span(class="icon ion-chevron-down")
             +e.item 
               +e.A.link--dropdown(href="page-services.html") Услуги
                 span(class="icon ion-chevron-down")
@@ -67,6 +66,17 @@ include ../abstracts/bemto/bemto.pug
               +e.H3.title(itemprop="serviceType") 
                 +e.icon
                   svg(width='30', height='30')
+                    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+                +e.A.link(href="single-service.html", itemprop="offers") Подтверждение соответствия ГОСТ Р
+              +b.UL.menu-services-submenu
+                +e.item 
+                  +e.A.link(href="single-service.html", itemprop="offers") Сертификат ГОСТ Р
+                +e.item 
+                  +e.A.link(href="single-service.html", itemprop="offers") Декларация ГОСТ Р
+            +e.item
+              +e.H3.title(itemprop="serviceType") 
+                +e.icon
+                  svg(width='30', height='30')
                     use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#package')
                 +e.A.link(href="single-service.html", itemprop="offers") Сертификация продукции и услуг
               +b.UL.menu-services-submenu
@@ -82,17 +92,6 @@ include ../abstracts/bemto/bemto.pug
                   +e.A.link(href="single-service.html", itemprop="offers") Сертификат происхождения формы А
                 +e.item 
                   +e.A.link(href="single-service.html", itemprop="offers") Протокол испытаний
-            +e.item
-              +e.H3.title(itemprop="serviceType") 
-                +e.icon
-                  svg(width='30', height='30')
-                    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
-                +e.A.link(href="single-service.html", itemprop="offers") Подтверждение соответствия ГОСТ Р
-              +b.UL.menu-services-submenu
-                +e.item 
-                  +e.A.link(href="single-service.html", itemprop="offers") Сертификат ГОСТ Р
-                +e.item 
-                  +e.A.link(href="single-service.html", itemprop="offers") Декларация ГОСТ Р
             +e.item
               +e.H3.title(itemprop="serviceType") 
                 +e.icon

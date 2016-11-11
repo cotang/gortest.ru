@@ -123,7 +123,7 @@ jQuery(document).ready(function($){
       var servicesTypeMinHeight = parseInt( $(servicesType).css('min-height'));  
       var servicesTitle = $(servicesType).find('.services-type__title');
       var currentHeight = $(servicesTitle).outerHeight();
-          currentHeight = currentHeight + 10; /* margin-top у ul*/
+          currentHeight = currentHeight + 20; /* margin-top + margin-bottom у ul*/
       var servicesTypeList = $(servicesType).find('.services-type__list');
       var servicesTypeItem = $(servicesTypeList).find('.services-type__item'); 
 

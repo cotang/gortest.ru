@@ -11,7 +11,8 @@
     margin: 0 0 50px;
   }
   &__map{
-    margin-right: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
     height: 100%;
     @include mq($from:xs, $until:lg){
       margin-right: 0;

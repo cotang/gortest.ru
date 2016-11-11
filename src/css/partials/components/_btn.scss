@@ -35,6 +35,18 @@
       background-color: $white;
     }
   } 
+  &--faq{
+    border: 1px solid $dark-violet;
+    background-color: $white;
+    color: $dark-violet;
+    @include font-family('Open Sans Regular', normal, normal); 
+    font-size: $font-size-small;
+    &:hover, &:focus, &:active{
+      color: $white;
+      text-decoration: none;
+      background-color: $dark-violet;
+    }    
+  }
   &--footer{
     font-size: $font-size;
   }

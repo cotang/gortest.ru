@@ -18,9 +18,9 @@ mixin form(items)
             +e.INPUT.input(type='text', name='Телефон/email', placeholder="Телефон или эл.почта:*")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-document.required
-            +e.TEXTAREA.textarea(type='text', name='Необходимый документ', placeholder="Необходимый документ:*") 
+            +e.TEXTAREA.textarea(type='text', name='Необходимый документ', placeholder="Необходимый документ:*")
             p.help-block Ошибка заполнения поля формы
-            
+
         if item.name == 'call'
           .form-group.field-name
             +e.INPUT.input(type='text', name='Имя', placeholder="Ваше имя:")

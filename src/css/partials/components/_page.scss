@@ -54,12 +54,26 @@
     }
   }
   &--single-service {
+    border-top: 1px solid $lighter-grey;
     .content__title{
       color: $green;
       @include font-family('Roboto Bold', normal, normal);
       font-size: $font-size-service-title;
       margin: 20px 0;
     }
+  }
+  &--services{
+    border-top: 1px solid $lighter-grey;
+    .content__title{
+      color: $green;
+      text-align: center;
+    }
+  } 
+  &--404{
+    border-top: 1px solid $lighter-grey;
+  } 
+  &--contacts{
+    border-top: 1px solid $lighter-grey;
   }
 
 

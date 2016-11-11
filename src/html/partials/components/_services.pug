@@ -19,6 +19,19 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Свидетельство о безопасности конструкции транспортного средства (СБКТС)
 
+      +e.block.col-xs-12.col-md-6.col-lg-4.col-xl-3 
+        +b.services-type
+          +e.H3.title(itemprop="serviceType") 
+            +e.icon
+              svg(width='30', height='30')
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+            +e.A.title-link(href="single-service.html", itemprop="offers") Подтверждение соответствия ГОСТ Р
+          +e.UL.list
+            +e.item 
+              +e.A.link(href="single-service.html", itemprop="offers") Сертификат ГОСТ Р
+            +e.item 
+              +e.A.link(href="single-service.html", itemprop="offers") Декларация ГОСТ Р
+
       +e.block.col-xs-12.col-md-6.col-lg-4.col-xl-3
         +b.services-type
           +e.H3.title(itemprop="serviceType") 
@@ -39,19 +52,6 @@ include ../abstracts/bemto/bemto.pug
               +e.A.link(href="single-service.html", itemprop="offers") Сертификат происхождения формы А
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Протокол испытаний
-
-      +e.block.col-xs-12.col-md-6.col-lg-4.col-xl-3 
-        +b.services-type
-          +e.H3.title(itemprop="serviceType") 
-            +e.icon
-              svg(width='30', height='30')
-                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
-            +e.A.title-link(href="single-service.html", itemprop="offers") Подтверждение соответствия ГОСТ Р
-          +e.UL.list
-            +e.item 
-              +e.A.link(href="single-service.html", itemprop="offers") Сертификат ГОСТ Р
-            +e.item 
-              +e.A.link(href="single-service.html", itemprop="offers") Декларация ГОСТ Р
 
       +e.block.col-xs-12.col-md-6.col-lg-4.col-xl-3 
         +b.services-type
