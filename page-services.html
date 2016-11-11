@@ -96,9 +96,7 @@
                   <a class="nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="page.html">О компании
-                    <span class="icon ion-chevron-down"></span>
-                  </a>
+                  <a class="nav__link" href="page.html">О компании</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link nav__link--dropdown" href="page-services.html">Услуги
@@ -146,6 +144,24 @@
                   <h3 class="menu-services__title" itemprop="serviceType">
                     <span class="menu-services__icon">
                       <svg width="30" height="30">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
+                      </svg>
+                    </span>
+                    <a class="menu-services__link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
+                  </h3>
+                  <ul class="menu-services-submenu">
+                    <li class="menu-services-submenu__item">
+                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
+                    </li>
+                    <li class="menu-services-submenu__item">
+                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-services__item">
+                  <h3 class="menu-services__title" itemprop="serviceType">
+                    <span class="menu-services__icon">
+                      <svg width="30" height="30">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
                       </svg>
                     </span>
@@ -169,24 +185,6 @@
                     </li>
                     <li class="menu-services-submenu__item">
                       <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Протокол испытаний</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-services__item">
-                  <h3 class="menu-services__title" itemprop="serviceType">
-                    <span class="menu-services__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
-                      </svg>
-                    </span>
-                    <a class="menu-services__link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
-                  </h3>
-                  <ul class="menu-services-submenu">
-                    <li class="menu-services-submenu__item">
-                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
-                    </li>
-                    <li class="menu-services-submenu__item">
-                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
                     </li>
                   </ul>
                 </li>
@@ -371,270 +369,307 @@
           <div class="content__inner">
             <div class="container">
               <!-- Breadcrumbs-->
-              <section class="breadcrumbs">
+              <section class="breadcrumbs breadcrumbs--dark">
                 <a href="index.html">Сертификационный центр Гортест</a>&gt;
                 <span>Услуги</span>
               </section>
+              <h1 class="content__title">Услуги</h1>
+              <div class="content__description" itemprop="mainEntity">Сертификационный центр «Гортест» является одним из ведущих центров. Специалисты «Гортест» оказывают услуги в области оценки качества на высшем уровне уже долгие годы. При этом мы предлагаем не только проведение сертификации товаров.</div>
             </div>
           </div>
-        </section>
-        <!-- Services-->
-        <section class="services" itemscope itemtype="http://schema.org/Service">
-          <div class="container">
-            <h2 class="services__title">Мы предлагаем</h2>
-            <div class="services__bg row">
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия Техническому регламенту</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат соответствия Техническому регламенту</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация соответствия Техническому регламенту</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Свидетельство о безопасности конструкции транспортного средства (СБКТС)</a>
-                    </li>
-                  </ul>
+          <!-- Services-->
+          <section class="services" itemscope itemtype="http://schema.org/Service">
+            <div class="container">
+              <h2 class="services__title">Мы предлагаем</h2>
+              <div class="services__bg row">
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия Техническому регламенту</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат соответствия Техническому регламенту</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация соответствия Техническому регламенту</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Свидетельство о безопасности конструкции транспортного средства (СБКТС)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация продукции и услуг</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация услуг</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Обязательная сертификация</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Добровольная сертификация</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат происхождения СТ-1</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат происхождения формы А</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Протокол испытаний</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#globe"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация за рубежом</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация СЕ</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация RoHS</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация ССС</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star"> </use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация менеджемента качества</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификаты серии ISO 9001</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация ХАССП</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flame"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия пожарной безопасности</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат пожарной безопасности</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация пожарной безопасности</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gear"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Техническая документация</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Разработка технических условий</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Регистрация технических условий</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Разработка и регистрация паспорта безопасности</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Обоснование безопасности</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Паспорт качества на вещество</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#repo"> </use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Разрешительная документация</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Заключение ЭКСКОНТА</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Нотификация ФСБ</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Аттестация рабочих мест в России</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Проверка измерительных приборов</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Фитосанитарный сертификат</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Отказные письма</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Оформление отказных писем</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Отказное письмо от Роспотребнадзора и пожарной безопасности</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Отказное письмо для таможни и для торговли</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type">
+                    <h3 class="services-type__title" itemprop="serviceType">
+                      <span class="services-type__icon">
+                        <svg width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bug"></use>
+                        </svg>
+                      </span>
+                      <a class="services-type__title-link" href="single-service.html" itemprop="offers">Санитарно-эпидемиологическая оценка продукции</a>
+                    </h3>
+                    <ul class="services-type__list">
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Свидетельство о государственной регистрации</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Этапы оформления СГР</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Экспертное заключение Роспотребнадзора</a>
+                      </li>
+                      <li class="services-type__item">
+                        <a class="services-type__link" href="single-service.html" itemprop="offers">Как получить экспертное заключение Роспотребнадзора</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="services-type services-type--question">
+                    <h3 class="services-type__title">
+                      <a class="services-type__link" href="single-service.html">Задать вопрос</a>
+                    </h3>
+                  </div>
                 </div>
               </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация продукции и услуг</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация услуг</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Обязательная сертификация</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Добровольная сертификация</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат происхождения СТ-1</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат происхождения формы А</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Протокол испытаний</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#globe"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация за рубежом</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация СЕ</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация RoHS</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация ССС</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star"> </use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Сертификация менеджемента качества</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификаты серии ISO 9001</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификация ХАССП</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flame"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Подтверждение соответствия пожарной безопасности</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Сертификат пожарной безопасности</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Декларация пожарной безопасности</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gear"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Техническая документация</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Разработка технических условий</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Регистрация технических условий</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Разработка и регистрация паспорта безопасности</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Обоснование безопасности</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Паспорт качества на вещество</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#repo"> </use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Разрешительная документация</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Заключение ЭКСКОНТА</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Нотификация ФСБ</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Аттестация рабочих мест в России</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Проверка измерительных приборов</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Фитосанитарный сертификат</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Отказные письма</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Оформление отказных писем</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Отказное письмо от Роспотребнадзора и пожарной безопасности</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Отказное письмо для таможни и для торговли</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type">
-                  <h3 class="services-type__title" itemprop="serviceType">
-                    <span class="services-type__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bug"></use>
-                      </svg>
-                    </span>
-                    <a class="services-type__title-link" href="single-service.html" itemprop="offers">Санитарно-эпидемиологическая оценка продукции</a>
-                  </h3>
-                  <ul class="services-type__list">
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Свидетельство о государственной регистрации</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Этапы оформления СГР</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Экспертное заключение Роспотребнадзора</a>
-                    </li>
-                    <li class="services-type__item">
-                      <a class="services-type__link" href="single-service.html" itemprop="offers">Как получить экспертное заключение Роспотребнадзора</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="services__block col-xs-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="services-type services-type--question">
-                  <h3 class="services-type__title">
-                    <a class="services-type__link" href="single-service.html">Задать вопрос</a>
-                  </h3>
-                </div>
-              </div>
+            </div>
+          </section>
+          <div class="content__text" itemprop="articleBody">
+            <div class="container">
+              <h2>Какая продукция подлежит обязательной оценке качества?</h2>
+              <p>Сертификация товаров может быть как добровольной, так и обязательной. Необходимость проведения оценки качества зависит от конкретного типа изделий и от требований. В системе ГОСТ сгруппированы в специальный перечень, регламентируемый ППРФ
+                №982 от 1 декабря 2009 года, а подлежащие сертификации по Техрегламентам товары входят в списки этих самых регламентов.</p>
+              <p>На сегодняшний день сертификации и декларированию подлежат такие товары:</p>
+              <ul>
+                <li>Пищевая продукция;</li>
+                <li>Лёгкая промышленность;</li>
+                <li>Оборудование (промышленное и бытовое);</li>
+                <li>Транспортные средства и автозапчасти;</li>
+                <li>Детские товары;</li>
+                <li>Косметика и парфюмерия;</li>
+                <li>Упаковочные средства;</li>
+                <li>Средства защиты;</li>
+                <li>Табак;</li>
+                <li>Лифты;</li>
+                <li>Лодки;</li>
+                <li>Некоторые виды строительных материалов;</li>
+                <li>Многое другое.</li>
+              </ul>
+              <p>Чтобы понять, подлежит ли товар проверке по тому или иному нормативному документу, требуется ли на него получать сертификат или другой разрешительный документ, необходимо обращаться в аккредитованные центры сертификации. Например, в нашем
+                центре «Гортест» мы оказываем услуги по присвоению кода ВЭД и можем точно и быстро определить, какие Вам потребуются сертификаты: Вам нужно лишь будет дать точное наименование и описание товара.</p>
+              <h2>Как проходит сертификация в Петербурге?</h2>
+              <p>Процедура оценки качества проходит одинаково как в Петербурге, так и в других городах и регионах РФ. В частности, проверка состоит из таких этапов:</p>
+              <ol>
+                <li>Ваша компания направляет нам запрос.</li>
+                <li>Мы помогаем Вам составить заявку и подготовить документы.</li>
+                <li>После этого Вы предоставляете необходимый образец продукции (или образцы – в зависимости от товара), который мы отправляем в одну из сотрудничающих с центром «Гортест» лабораторию, где товар проходит надлежащую экспертизу.</li>
+                <li>При определённых схемах проверки также потребуется оценить безопасность производства – в этом случае к Вам на предприятие выедет экспертная группа, которая проверит соответствие технологических процессов утверждённым нормам.</li>
+                <li>Итогом проведённых экспертиз станет выдача разрешительного документа.</li>
+                <li>Сертификация товаров проводится по инициативе предпринимателя, если она добровольная. В этом случае компания получает множество различных бонусов и преимуществ – от возможности приёма госзаказа до выхода на международные рынки.</li>
+              </ol>
             </div>
           </div>
         </section>
@@ -684,7 +719,7 @@
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-document required">
-                        <textarea class="form__textarea" type="text" name="Необходимый документ" placeholder="Необходимый документ:*"> </textarea>
+                        <textarea class="form__textarea" type="text" name="Необходимый документ" placeholder="Необходимый документ:*"></textarea>
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group">
@@ -769,16 +804,7 @@
           <a class="social-links__link social-links__link--search" href="#"></a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--rss" href="#"></a>
-        </li>
-        <li class="social-links__item">
           <a class="social-links__link social-links__link--vk" href="#"></a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link social-links__link--tw" href="#"></a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link social-links__link--fb" href="#"></a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link social-links__link--price" href="page-faq.html">Задать вопрос</a>

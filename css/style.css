@@ -4074,7 +4074,6 @@ img {
   position: relative; }
   .header__nav {
     border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
     background-color: #ffffff; }
     .header__nav--sticky {
       position: fixed;
@@ -4311,9 +4310,13 @@ img {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
   .contacts-section--map {
+    margin-left: -15px;
+    margin-right: -15px;
     padding: 25px 30px;
     background-color: #00c96d;
     color: #ffffff; }
+    .contacts-section--map .contacts-section__inner {
+      max-width: 400px; }
     .contacts-section--map .contacts-section__line {
       margin: 20px 0;
       padding: 0 30px; }
@@ -4361,6 +4364,18 @@ img {
       color: #4b4d6a;
       text-decoration: underline;
       background-color: #ffffff; }
+  .btn--faq {
+    border: 1px solid #4b4d6a;
+    background-color: #ffffff;
+    color: #4b4d6a;
+    font-family: "Open Sans Regular", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px; }
+    .btn--faq:hover, .btn--faq:focus, .btn--faq:active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #4b4d6a; }
   .btn--footer {
     font-size: 16px; }
 
@@ -4489,13 +4504,27 @@ img {
 .page--single-glossary .content__text {
   margin-top: 45px; }
 
-.page--single-service .content__title {
-  color: #00c96d;
-  font-family: "Roboto Bold", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 45px;
-  margin: 20px 0; }
+.page--single-service {
+  border-top: 1px solid #eeeeee; }
+  .page--single-service .content__title {
+    color: #00c96d;
+    font-family: "Roboto Bold", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 45px;
+    margin: 20px 0; }
+
+.page--services {
+  border-top: 1px solid #eeeeee; }
+  .page--services .content__title {
+    color: #00c96d;
+    text-align: center; }
+
+.page--404 {
+  border-top: 1px solid #eeeeee; }
+
+.page--contacts {
+  border-top: 1px solid #eeeeee; }
 
 .page__form {
   margin: 70px 0; }
@@ -4538,7 +4567,7 @@ img {
     font-size: 20px; }
   .content__text h5, .content__text h6 {
     font-size: 19px; }
-  .content__text ul {
+  .content__text ul, .content__text ol {
     border-radius: 5px;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -4631,7 +4660,7 @@ img {
 
 .services {
   background-color: #f8f8f8;
-  margin-top: 50px; }
+  padding-top: 50px; }
   .services__bg {
     background-image: url(../img/bg-stamp.png);
     background-repeat: no-repeat;
@@ -4682,7 +4711,7 @@ img {
     font-size: 19px;
     padding: 10px 0 5px 55px;
     margin: 0;
-    color: #00c96d;
+    color: #0da15d;
     position: relative;
     line-height: 1.68; }
   .services-type__icon {
@@ -4705,7 +4734,7 @@ img {
     font-style: normal; }
   .services-type__item {
     position: relative;
-    padding: 5px 5px 5px 15px; }
+    padding: 5px 10px 5px 15px; }
     .services-type__item:before {
       content: '';
       display: inline-block;
@@ -4725,8 +4754,10 @@ img {
       .services-type__item--more .services-type__link {
         color: #24346f;
         text-decoration: underline; }
-  .services-type__title-link:hover, .services-type__title-link:focus {
-    text-decoration: underline; }
+  .services-type__title-link {
+    color: #0da15d; }
+    .services-type__title-link:hover, .services-type__title-link:focus {
+      text-decoration: underline; }
   .services-type__link {
     display: inline-block;
     color: #343e47; }
@@ -4910,7 +4941,7 @@ img {
 .specialists {
   margin-top: 40px;
   padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   background-color: #f8f8f8; }
   .specialists__title {
     text-align: center;
@@ -4975,7 +5006,7 @@ img {
       color: #2a3972; }
 
 .reviews {
-  margin-top: 100px; }
+  margin-top: 40px; }
   .reviews__title {
     text-align: center;
     font-size: 32px;
@@ -5103,7 +5134,8 @@ img {
     font-style: normal;
     margin: 0 0 50px; }
   .contacts__map {
-    margin-right: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
     height: 100%; }
 
 .pin {
@@ -6259,12 +6291,14 @@ img {
     margin-bottom: 30px; }
   .contacts-section__line{
     margin: 0 0 10px; }
+  .contacts-section--map .contacts-section__inner{
+    max-width: initial; }
   .sidebar{
     display: none; }
   .best__block{
     text-align: center; }
   .services{
-    margin-top: 20px; }
+    padding-top: 20px; }
   .services__title{
     margin: 0 0 30px; }
   .about-us__text{
@@ -6277,8 +6311,6 @@ img {
     display: none; }
   .manager__bio{
     margin-bottom: 20px; }
-  .reviews{
-    margin-top: 40px; }
   .clients{
     margin-top: 40px; }
   .contacts{

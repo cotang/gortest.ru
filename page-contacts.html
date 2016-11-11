@@ -96,9 +96,7 @@
                   <a class="nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="page.html">О компании
-                    <span class="icon ion-chevron-down"></span>
-                  </a>
+                  <a class="nav__link" href="page.html">О компании</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link nav__link--dropdown" href="page-services.html">Услуги
@@ -146,6 +144,24 @@
                   <h3 class="menu-services__title" itemprop="serviceType">
                     <span class="menu-services__icon">
                       <svg width="30" height="30">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
+                      </svg>
+                    </span>
+                    <a class="menu-services__link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
+                  </h3>
+                  <ul class="menu-services-submenu">
+                    <li class="menu-services-submenu__item">
+                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
+                    </li>
+                    <li class="menu-services-submenu__item">
+                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-services__item">
+                  <h3 class="menu-services__title" itemprop="serviceType">
+                    <span class="menu-services__icon">
+                      <svg width="30" height="30">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#package"></use>
                       </svg>
                     </span>
@@ -169,24 +185,6 @@
                     </li>
                     <li class="menu-services-submenu__item">
                       <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Протокол испытаний</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-services__item">
-                  <h3 class="menu-services__title" itemprop="serviceType">
-                    <span class="menu-services__icon">
-                      <svg width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#versions"></use>
-                      </svg>
-                    </span>
-                    <a class="menu-services__link" href="single-service.html" itemprop="offers">Подтверждение соответствия ГОСТ Р</a>
-                  </h3>
-                  <ul class="menu-services-submenu">
-                    <li class="menu-services-submenu__item">
-                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Сертификат ГОСТ Р</a>
-                    </li>
-                    <li class="menu-services-submenu__item">
-                      <a class="menu-services-submenu__link" href="single-service.html" itemprop="offers">Декларация ГОСТ Р</a>
                     </li>
                   </ul>
                 </li>
@@ -370,7 +368,7 @@
         <section class="content">
           <div class="container">
             <!-- Breadcrumbs-->
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--dark">
               <a href="index.html">Сертификационный центр Гортест</a>&gt;
               <span>Контакты</span>
             </section>
@@ -378,7 +376,7 @@
         </section>
         <!-- Contacts-->
         <section class="contacts">
-          <div class="container">
+          <div class="container-fluid">
             <h2 class="contacts__title">Контакты:</h2>
             <div class="row">
               <div class="col-xs-12 col-lg-7">
@@ -386,20 +384,22 @@
               </div>
               <div class="col-xs-12 col-lg-5">
                 <div class="contacts-section contacts-section--map" itemscope itemtype="http://schema.org/ContactPoint">
-                  <div class="contacts-section__line">
-                    <span class="contacts-section__address" itemprop="areaServed">Станция метро: "Петроградская", ул. Профессора Попова, д. 23, 4 эт., оф. 407 (вход с проспекта Медиков, вывеска "офисный центр")</span>
-                  </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
-                  </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78126330516" target="_blank" itemprop="faxNumber">+7 (812) 633-05-16</a>
-                  </div>
-                  <div class="contacts-section__line">
-                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
-                  </div>
-                  <div class="contacts-section__line">
-                    <span class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00 по местному времени</span>
+                  <div class="contacts-section__inner">
+                    <div class="contacts-section__line">
+                      <span class="contacts-section__address" itemprop="areaServed">Станция метро: "Петроградская", ул. Профессора Попова, д. 23, 4 эт., оф. 407 (вход с проспекта Медиков, вывеска "офисный центр")</span>
+                    </div>
+                    <div class="contacts-section__line">
+                      <a class="contacts-section__link contacts-section__link--email" href="mailto:spb@gostest.ru" target="_blank" itemprop="email">spb@gostest.ru</a>
+                    </div>
+                    <div class="contacts-section__line">
+                      <a class="contacts-section__link contacts-section__link--tel" href="tel:+78126330516" target="_blank" itemprop="faxNumber">+7 (812) 633-05-16</a>
+                    </div>
+                    <div class="contacts-section__line">
+                      <a class="contacts-section__link contacts-section__link--tel" href="tel:+78129279411" target="_blank" itemprop="telephone">+7 (812) 927-94-11</a>
+                    </div>
+                    <div class="contacts-section__line">
+                      <span class="contacts-section__working-hours" itemprop="hoursAvailable">Мы работаем с 9:30 до 18:00 по местному времени</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -452,7 +452,7 @@
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-document required">
-                        <textarea class="form__textarea" type="text" name="Необходимый документ" placeholder="Необходимый документ:*"> </textarea>
+                        <textarea class="form__textarea" type="text" name="Необходимый документ" placeholder="Необходимый документ:*"></textarea>
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group">
@@ -537,16 +537,7 @@
           <a class="social-links__link social-links__link--search" href="#"></a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--rss" href="#"></a>
-        </li>
-        <li class="social-links__item">
           <a class="social-links__link social-links__link--vk" href="#"></a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link social-links__link--tw" href="#"></a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link social-links__link--fb" href="#"></a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link social-links__link--price" href="page-faq.html">Задать вопрос</a>
