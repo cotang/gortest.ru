@@ -23,12 +23,12 @@ jQuery(document).ready(function($){
 
   /* Faq accordion */
   $('.faq__ask').click(function(){
-    if($(this).next('.faq__text').is(":visible")) {
-      $(this).next('.faq__text').slideUp();
+    if($(this).next('.faq__answer').is(":visible")) {
+      $(this).next('.faq__answer').slideUp();
       $(this).closest('.faq__block').find('.faq__icon--active').removeClass('faq__icon--active');
     } else {
-      $(this).closest('.faq').find('.faq__text').slideUp();
-      $(this).siblings('.faq__text').slideDown();
+      $(this).closest('.faq').find('.faq__answer').slideUp();
+      $(this).siblings('.faq__answer').slideDown();
       $(this).closest('.faq').find('.faq__icon--active').removeClass('faq__icon--active');
       $(this).closest('.faq__block').find('.faq__icon').addClass('faq__icon--active');
     }

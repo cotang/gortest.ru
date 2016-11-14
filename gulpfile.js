@@ -134,8 +134,12 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
   return gulp.src(path.src.js)
 //    .pipe(gulpif(devBuild, sourcemaps.init()))
+    .pipe(plumber(function(error) {
+        gutil.log(gutil.colors.red(error.message));
+        this.emit('end');
+    }))
     .pipe(concat('script.min.js'))
-    .pipe(uglify())
+    .pipe(gulpif(!devBuild, uglify()))
 //    .pipe(gulpif(devBuild, sourcemaps.write()))
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
@@ -236,7 +240,7 @@ gulp.task('setWatch', function() {
 gulp.task('watch', ['setWatch', 'browserSync'], function(){
   gulp.watch([path.watch.html], function(event, cb) {
     gulp.start('pug');
-  });
+  }, [reload]);
   gulp.watch([path.watch.css], function(event, cb) {
     gulp.start('sass');
   });
@@ -267,3 +271,6 @@ gulp.task('deploy', function() {
 gulp.task('default', ['watch']);
 
 
+// gulp.task('watch', ['browserSync'], function() {
+//     gulp.watch(config.jade.watch, ['jade', browserSync.reload]);
+// });

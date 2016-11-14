@@ -1,8 +1,11 @@
 include ../abstracts/bemto/bemto.pug
 
 +b.SECTION.services(itemscope, itemtype="http://schema.org/Service")
-  .container         
-    +e.H2.title Мы предлагаем
+  .container
+    if index
+      +e.H2.title Мы предлагаем
+    else
+      +e.H2.title Какие услуги предоставляет наш центр?      
     +e.bg.row
       +e.block.col-xs-12.col-md-6.col-lg-4.col-xl-3 
         +b.services-type

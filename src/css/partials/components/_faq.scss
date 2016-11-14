@@ -29,9 +29,11 @@
       font-size: $font-size;
     }
   }
-  &__text{
+  &__answer{
     border-top: 1px solid $lighter-grey;
     display: none;
+    padding: 20px 0;
+    @include font-family('Open Sans Light', normal, normal);
   }
 
   &__icon{

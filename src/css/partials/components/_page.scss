@@ -5,11 +5,13 @@
     }
     .content__title{
       margin: 0;
-      padding-top: 40px;
-      padding-bottom: 130px;
-      @include mq($from:xs, $until:xl){
-        padding-bottom: 60px;
-      } 
+      padding-top: 5px;
+      padding-bottom: 15px;
+      // padding-top: 40px;
+      // padding-bottom: 130px;
+      // @include mq($from:xs, $until:xl){
+      //   padding-bottom: 60px;
+      // } 
     }
   }
   &--faq, &--questions{
@@ -20,13 +22,7 @@
       margin: 0;
       padding-top: 5px;
       padding-bottom: 15px;
-    }
-    .faq__title{
-      display: none;
-    }
-    .faq__btn{
-      display: none;
-    }    
+    }   
   }
   &--news{
     .content__bg{

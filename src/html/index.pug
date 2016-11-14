@@ -2,6 +2,7 @@ extends partials/templates/_template--index.pug
 
 block content
   +b.SECTION.page--front-page
+  - var index = true
     // The best
     +b.SECTION.best
       .container
@@ -15,7 +16,7 @@ block content
           .col-xs-12.col-md-8.offset-md-2.col-lg-5.offset-lg-0
             +e.form
               // Form call
-              include partials/components/_form--call.pug 
+              include partials/components/_form--call.pug
     // Services
     include partials/components/_services.pug 
     // About us

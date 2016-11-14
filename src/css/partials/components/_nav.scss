@@ -8,7 +8,7 @@
   }
   &__list{    
     padding-left: 0;
-    margin: 0 0 0 -20px;
+    margin: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -23,11 +23,15 @@
     }
 
     &--sticky{
-      margin: 0;
-      font-size: $font-size-small;
+      font-size: $font-size;
+      .nav__link{
+        padding: 15px 15px;
+      }
     }
   }
   &__item{
+    flex: 1 0 auto;
+    text-align: center;    
     @include mq($from:xs, $until:lg){
       flex: 0 0 100%;
     }
@@ -50,7 +54,7 @@
     &--btn{
       .nav__link{
         background-color: $orange;
-        color: $text-color-white; 
+        color: $text-color-white;        
         &:hover, &:focus {
           background-color: $orange-btn-hover;
         }    
@@ -62,7 +66,8 @@
     @include font-family('Open Sans Semibold', normal, normal);
     display: inline-block;
     white-space: nowrap;
-    padding: 15px 22px; 
+    padding: 15px 20px;
+    width: 100%; 
     color: $darker-grey;
     @include mq($from:lg, $until:xl){
       padding: 15px 10px;
