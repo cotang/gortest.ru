@@ -82,19 +82,19 @@ jQuery(document).ready(function($){
   /* sticky menu */
   var headerInner = $('.header__inner');
   var headerNav = $('.header__nav'); 
-  var navList = $('.nav__list');
-  var navItemLogo = $(navList).find('.nav__item--logo');  
+  // var navList = $('.nav__list');
+  // var navItemLogo = $(navList).find('.nav__item--logo');  
 
   $(window).scroll(function () {
     if ($(window).width() > 768) {
       if ($(this).scrollTop() >= headerInner.height() ) {
         $(headerNav).addClass('header__nav--sticky');
-        $(navList).addClass('nav__list--sticky');
-        $(navItemLogo).show();
+        // $(navList).addClass('nav__list--sticky');
+        // $(navItemLogo).show();
       } else {
         $(headerNav).removeClass('header__nav--sticky');
-        $(navList).removeClass('nav__list--sticky');
-        $(navItemLogo).hide();
+        // $(navList).removeClass('nav__list--sticky');
+        // $(navItemLogo).hide();
       }
     }
   });

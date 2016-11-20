@@ -7,18 +7,14 @@
   }
   &__nav{
     border-top: 1px solid $lighter-grey;
-    // border-bottom: 1px solid $lighter-grey;
     background-color: $white;
-  //   @include mq($from:xs, $until:md){
-  //     flex: 0 0 100%;
-  //     max-width: 100%;
-  //   }
     &--sticky{
       position: fixed;
       z-index: 3;
       width: 100%;
       top: 0;
       left: 0;
+      border-bottom: 1px solid $lighter-grey;
     }
   }
   &__search{

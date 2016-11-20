@@ -1,0 +1,43 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--sample
+
+    // Content
+    +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
+
+      +e.inner
+        .container
+
+          // Breadcrumbs
+          +b.SECTION.breadcrumbs--dark
+            a(href="index.html") Сертификационный центр Гортест
+            ='>'
+            span Страница
+
+          +e.H1.title(itemprop="headline") Страница (h1)
+          +e.text(itemprop="articleBody") 
+            h2 Когда оформлять сертификат соответствия ТР ТС 
+            p Товары, которым требуется подтверждение соблюдения требований ТР ТС, перечислены в тексте каждого регламента с указанием положенных им:
+            ul
+              li документальной формы подтверждения соответствия (сертификат, декларация, СГР),
+              li схемы (на партию, контракт или серийное производство).
+            p Существует специальная, Единая форма КТС (утверждена решением №319 в 2010 г.) – полный перечень товаров, попадающих под действие того или итого регламента.
+            p Не имеющий представителя из ТС иностранец может оформить только сертификат соответствия ТР ТС.
+            p Продукция, попавшая под требования одного из ТР ТС, нуждается в сертификации с момента его вступления в силу. 
+
+    // Specialists
+    +b.SECTION.specialists
+      .container
+        .row
+          .col-xs-12.col-lg-6
+            +e.H2.title С вами работает    
+            // Manager
+            include partials/components/_manager.pug 
+          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-0
+            +e.form
+              // Form application
+              include partials/components/_form--application.pug
+    // Clients
+    include partials/components/_clients.pug 
+

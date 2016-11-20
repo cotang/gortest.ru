@@ -270,7 +270,3 @@ gulp.task('deploy', function() {
 // Default task
 gulp.task('default', ['watch']);
 
-
-// gulp.task('watch', ['browserSync'], function() {
-//     gulp.watch(config.jade.watch, ['jade', browserSync.reload]);
-// });

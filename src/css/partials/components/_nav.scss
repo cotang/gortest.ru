@@ -22,12 +22,12 @@
       padding-bottom: 10px;
     }
 
-    &--sticky{
-      font-size: $font-size;
-      .nav__link{
-        padding: 15px 15px;
-      }
-    }
+    // &--sticky{      
+    //   font-size: $font-size;
+    //   .nav__link{
+    //     padding: 15px 15px;
+    //   }
+    // }
   }
   &__item{
     flex: 1 0 auto;
@@ -35,15 +35,15 @@
     @include mq($from:xs, $until:lg){
       flex: 0 0 100%;
     }
-    &--logo{
-      display: none;
-      align-self: center;
-      margin-bottom: 5px;
-      padding-right: 20px;
-      @include mq($from:lg, $until:xl){
-        margin-bottom: 2px;
-      }
-    }
+    // &--logo{
+    //   display: none;
+    //   align-self: center;
+    //   margin-bottom: 5px;
+    //   padding-right: 20px;
+    //   @include mq($from:lg, $until:xl){
+    //     margin-bottom: 2px;
+    //   }
+    // }
     &--dropdown{
       .nav__link{
         &:after{

@@ -7,11 +7,6 @@
       margin: 0;
       padding-top: 5px;
       padding-bottom: 15px;
-      // padding-top: 40px;
-      // padding-bottom: 130px;
-      // @include mq($from:xs, $until:xl){
-      //   padding-bottom: 60px;
-      // } 
     }
   }
   &--faq, &--questions{
@@ -57,6 +52,9 @@
       font-size: $font-size-service-title;
       margin: 20px 0;
     }
+    .specialists{
+      background-color: $white;
+    }
   }
   &--services{
     border-top: 1px solid $lighter-grey;
@@ -71,8 +69,15 @@
   &--contacts{
     border-top: 1px solid $lighter-grey;
   }
-
-
+  &--sample{
+    border-top: 1px solid $lighter-grey;
+    .content__title{
+      color: $green;
+    }
+    .specialists{
+      background-color: $white;
+    }
+  } 
 
   &__form{
     margin: 70px 0;
