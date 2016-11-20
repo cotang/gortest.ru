@@ -4080,7 +4080,8 @@ img {
       z-index: 3;
       width: 100%;
       top: 0;
-      left: 0; }
+      left: 0;
+      border-bottom: 1px solid #eeeeee; }
   .header__search {
     position: fixed;
     z-index: 4;
@@ -4147,21 +4148,10 @@ img {
     -ms-flex-pack: justify;
         justify-content: space-between;
     font-size: 18px; }
-    .nav__list--sticky {
-      font-size: 16px; }
-      .nav__list--sticky .nav__link {
-        padding: 15px 15px; }
   .nav__item {
     -ms-flex: 1 0 auto;
         flex: 1 0 auto;
     text-align: center; }
-    .nav__item--logo {
-      display: none;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
-      margin-bottom: 5px;
-      padding-right: 20px; }
     .nav__item--dropdown .nav__link:after {
       content: ''; }
     .nav__item--btn .nav__link {
@@ -4513,6 +4503,8 @@ img {
     font-style: normal;
     font-size: 45px;
     margin: 20px 0; }
+  .page--single-service .specialists {
+    background-color: #ffffff; }
 
 .page--services {
   border-top: 1px solid #eeeeee; }
@@ -4525,6 +4517,13 @@ img {
 
 .page--contacts {
   border-top: 1px solid #eeeeee; }
+
+.page--sample {
+  border-top: 1px solid #eeeeee; }
+  .page--sample .content__title {
+    color: #00c96d; }
+  .page--sample .specialists {
+    background-color: #ffffff; }
 
 .page__form {
   margin: 70px 0; }
@@ -4920,7 +4919,7 @@ img {
       top: 35px;
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-      width: 5px;
+      width: 6px;
       height: 20px;
       background-color: #00c96d; }
     .faq__icon:after {
@@ -4931,7 +4930,7 @@ img {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
       width: 20px;
-      height: 5px;
+      height: 6px;
       background-color: #00c96d; }
     .faq__icon--active {
       background-color: red; }
@@ -6346,8 +6345,6 @@ img {
   .review-item--third{
     display: none; } }
   @media (min-width: 64em) and (max-width: 79.99em){
-  .nav__item--logo{
-    margin-bottom: 2px; }
   .nav__link{
     padding: 15px 10px; } }
   @media (max-width: 47.99em){
