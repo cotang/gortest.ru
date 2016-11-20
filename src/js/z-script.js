@@ -4,7 +4,7 @@
 
 jQuery(document).ready(function($){  
 
-  $('.nav__link--dropdown').click(function(e) { 
+  $('.nav__item--dropdown .nav__link').click(function(e) { 
       e.preventDefault();
       $(this).closest('.header').find('.menu-services').show();
   });

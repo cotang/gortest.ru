@@ -76,12 +76,33 @@
     font-size: $font-size-glossary;
     &--skype{
       color: $skype;
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: .5em;
+        @include sprite($s-manager-skype);
+      }
     }
     &--icq{
       color: $icq;
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: .5em;
+        @include sprite($s-manager-icq);
+      }
     }
     &--email{
       color: $email;
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: .5em;
+        @include sprite($s-manager-mail);
+      }
     }
   }
 }

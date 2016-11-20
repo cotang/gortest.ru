@@ -14,14 +14,14 @@ include ../abstracts/bemto/bemto.pug
             .row
               .col-xs-12.col-lg-6
                 +e.line 
-                  +e.SPAN.city(itemprop="areaServed", class="icon ion-android-pin") Санкт-Петербург
+                  +e.SPAN.city(itemprop="areaServed") Санкт-Петербург
                 +e.line 
-                  +e.SPAN.working-hours(itemprop="hoursAvailable", class="icon ion-android-time") Мы работаем с 9:30 до 18:00
+                  +e.SPAN.working-hours(itemprop="hoursAvailable") Мы работаем с 9:30 до 18:00
               .col-xs-12.col-lg-6
                 +e.line
-                  +e.A.link--tel(href="tel:+78129279411", target="_blank", itemprop="telephone", class="icon ion-android-call") +7 (812) 927-94-11
+                  +e.A.link--tel(href="tel:+78129279411", target="_blank", itemprop="telephone") +7 (812) 927-94-11
                 +e.line
-                  +e.A.link--email(href="mailto:spb@gostest.ru", target="_blank", itemprop="email", class="icon ion-email") spb@gostest.ru
+                  +e.A.link--email(href="mailto:spb@gostest.ru", target="_blank", itemprop="email") spb@gostest.ru
   +e.nav
     .container
       // Nav
@@ -37,9 +37,8 @@ include ../abstracts/bemto/bemto.pug
               +e.A.link(href="index.html") Главная
             +e.item 
               +e.A.link(href="page.html") О компании
-            +e.item 
-              +e.A.link--dropdown(href="page-services.html") Услуги
-                span(class="icon ion-chevron-down")
+            +e.item--dropdown
+              +e.A.link(href="page-services.html") Услуги
             +e.item 
               +e.A.link(href="page-news.html") Новости
             +e.item

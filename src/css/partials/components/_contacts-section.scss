@@ -8,17 +8,50 @@
   }
   &__link{
     color: $dark-grey;
+    &--tel{
+      position: relative;
+      margin-left: 30px;
+      &:before{
+        content: '';
+        @include sprite($s-icon-tel);
+        position: absolute;
+        left: -30px;
+        top: 0;
+      }      
+    }
+    &--email{
+      position: relative;
+      margin-left: 30px;
+      &:before{
+        content: '';
+        @include sprite($s-icon-mail);
+        position: absolute;
+        left: -30px;
+        top: 0.2em;
+      }      
+    }
   }
-  .icon{
+  &__city{
     position: relative;
     margin-left: 30px;
     &:before{
+      content: '';
+      @include sprite($s-icon-pin);
       position: absolute;
-      left: -15px;
-      bottom: -2px;
-      color: $blue;
-      font-size: 1.5em;
-      transform: translateX(-50%);
+      left: -28px;
+      top: 0;
+    }
+  }
+  &__working-hours{
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    &:before{
+      content: '';
+      @include sprite($s-icon-time);
+      position: absolute;
+      left: -30px;
+      top: 0; 
     }
   }
 
@@ -28,9 +61,6 @@
     padding: 25px 30px;
     background-color: $green;
     color: $text-color-white;
-    @include mq($from:xs, $until:lg){
-      // margin-bottom: 40px;
-    }
     @include mq($from:xs, $until:md){
       padding: 10px;
     }
@@ -47,6 +77,34 @@
     .contacts-section__link{
       color: $text-color-white;
     }
+
+    .contacts-section__address{
+      display: inline-block;
+      position: relative;
+      margin-left: 30px;
+      &:before{
+        content: '';
+        @include sprite($s-contacts-pin);
+        position: absolute;
+        left: -27px;
+        top: 0;
+      }      
+    }
+    .contacts-section__link--email:before{
+      @include sprite($s-contacts-email);
+      top: 0;
+    }
+    .contacts-section__link--tel:before{
+      @include sprite($s-contacts-tel);
+    }
+    .contacts-section__link--fax:before{
+      @include sprite($s-contacts-fax);
+      top: -0.1em;
+    }
+    .contacts-section__working-hours:before{
+      @include sprite($s-contacts-time);
+    }
+
   }
   &--footer{
     color: $text-color-white;
@@ -55,7 +113,19 @@
       &:hover, &:focus {
         text-decoration: underline;
       }
-    }    
+    } 
+    .contacts-section__link--email:before{
+      @include sprite($s-contacts-mail);
+    }
+    .contacts-section__link--tel:before{
+      @include sprite($s-contacts-tel);
+    }
+    .contacts-section__working-hours:before{
+      @include sprite($s-contacts-time);
+    }
+    .contacts-section__city:before{
+      @include sprite($s-contacts-pin);
+    }
   }
 }
 

@@ -35,6 +35,14 @@
     @include mq($from:xs, $until:lg){
       flex: 0 0 100%;
     }
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: $green;
+      .nav__link{
+        color: $text-color-white;
+        text-decoration: none; 
+      }
+    }
     // &--logo{
     //   display: none;
     //   align-self: center;
@@ -48,16 +56,26 @@
       .nav__link{
         &:after{
           content: '';
-        }    
+          display: inline-block;
+          margin-left: 0.2em;
+          @include sprite($s-dropdown-black); 
+        }
       }
+      &:hover, &:focus {
+        .nav__link{
+          &:after{
+            @include sprite($s-dropdown-white); 
+          }
+        }
+      }  
     }
     &--btn{
-      .nav__link{
-        background-color: $orange;
-        color: $text-color-white;        
-        &:hover, &:focus {
-          background-color: $orange-btn-hover;
-        }    
+      background-color: $orange;
+      .nav__link{        
+        color: $text-color-white;    
+      }
+      &:hover, &:focus {
+        background-color: $orange-btn-hover;
       }
     }
   }
@@ -66,24 +84,21 @@
     @include font-family('Open Sans Semibold', normal, normal);
     display: inline-block;
     white-space: nowrap;
-    padding: 15px 20px;
-    width: 100%; 
+    padding: 15px 0;
+    // width: 100%; 
     color: $darker-grey;
     @include mq($from:lg, $until:xl){
-      padding: 15px 10px;
+      padding: 15px 0;
     }
     @include mq($from:xs, $until:lg){
       padding: 10px;
     }
-
-    &:hover, &:focus {
-      background-color: $green;
-      color: $text-color-white;
-      text-decoration: none;
-    }  
-    .icon{
-      &:before{
-        font-size: 0.8em;
+    &--dropdown{
+      &:after{
+        content: '';
+        display: inline-block;
+        margin-left: 0.2em;
+        @include sprite($s-dropdown-black); 
       }
     }
   }
