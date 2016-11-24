@@ -131,6 +131,8 @@
   }
   &__item{
     margin: 0 10px 10px;
+    display: inline-block;
+    vertical-align: top;
   }
   &__icon{
     use{
@@ -146,8 +148,9 @@
     align-items: flex-start;
     @include font-family('Open Sans Light', normal, normal);
     font-size: $font-size-menu;
-    @include mq($from:xs, $until:lg){
+    @include mq($from:xs, $until:xl){
       font-size: $font-size;
+      padding: 0;
     } 
   }
   &__link{
@@ -155,15 +158,10 @@
   }
   &__close{
     position: absolute;
-    top: 0;
-    transform: translateX(100%);
-    right: -10px;
-    color: $text-color;
-    font-size: 1.8em;
-    opacity: 0.5;
-    @include mq($from:xs, $until:xl){
-      right: 30px;
-    } 
+    top: 10px;
+    @include sprite($s-close);
+    right: 10px;
+    opacity: 0.7;
   }
 }
 .menu-services-submenu{
@@ -171,7 +169,7 @@
   padding-left: 20px;
   margin: 0;
   list-style-type: none;
-  @include mq($from:xs, $until:lg){
+  @include mq($from:xs, $until:xl){
     font-size: $font-size-small;
   }
   &__item{
