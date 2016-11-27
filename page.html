@@ -108,7 +108,7 @@
                   <a class="nav__link" href="page-contacts.html">Контакты</a>
                 </li>
                 <li class="nav__item nav__item--btn">
-                  <a class="nav__link" href="page-form.html">Рассчитать стоимость</a>
+                  <a class="nav__link" href="#">Рассчитать стоимость</a>
                 </li>
               </ul>
             </div>
@@ -352,7 +352,7 @@
             <form class="search__form">
               <input class="search__input" type="text" name="Поиск" placeholder="Поиск..." />
             </form>
-            <a class="search__close icon ion-close" href="#"></a>
+            <a class="search__close" href="#"></a>
           </div>
         </div>
       </div>
@@ -420,16 +420,16 @@
                   <section class="form form--application">
                     <form action="" method="">
                       <h3 class="form__title">Оформить заказ</h3>
-                      <div class="form-group field-name">
-                        <input class="form__input" type="text" name="Имя" placeholder="Ваше имя:" />
+                      <div class="form-group field-product required">
+                        <input class="form__input" type="text" name="Продукция" placeholder="Ваша продукция:*" />
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
-                      <div class="form-group field-tel-email required">
-                        <input class="form__input" type="text" name="Телефон/email" placeholder="Телефон или эл.почта:*" />
+                      <div class="form-group field-tel required">
+                        <input class="form__input" type="text" name="Телефон" placeholder="Телефон:*" />
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
-                      <div class="form-group field-document required">
-                        <textarea class="form__textarea" type="text" name="Необходимый документ" placeholder="Необходимый документ:*"></textarea>
+                      <div class="form-group field-email">
+                        <input class="form__input" type="text" name="Email" placeholder="Email:" />
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group">
@@ -589,11 +589,40 @@
           <a class="social-links__link social-links__link--vk" href="#"></a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--price" href="page-faq.html">Задать вопрос</a>
+          <a class="social-links__link social-links__link--price" href="page-questions.html">Задать вопрос</a>
         </li>
       </ul>
       <a class="up" href="#"></a>
     </aside>
+    <!-- Overlay-->
+    <div class="overlay">
+      <div class="overlay__bg"></div>
+      <div class="overlay__form">
+        <a class="overlay__close" href="/"></a>
+        <!-- Form cost-->
+        <section class="form form--cost">
+          <form action="" method="">
+            <h3 class="form__title">Рассчитать стоимость</h3>
+            <div class="form-group field-product required">
+              <input class="form__input" type="text" name="Продукция" placeholder="Ваша продукция:*" />
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group field-tel required">
+              <input class="form__input" type="text" name="Телефон" placeholder="Телефон:*" />
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group field-email">
+              <input class="form__input" type="text" name="Email" placeholder="Email:" />
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group">
+              <button class="btn btn--form" type="submit">Рассчитать</button>
+              <p class="help-block help-block-success">Ваша заявка отправлена</p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
