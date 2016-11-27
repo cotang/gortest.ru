@@ -59,9 +59,16 @@ include ../abstracts/bemto/bemto.pug
     //- +e.item
     //-   +e.A.link--fb(href="#")
     +e.item
-      +e.A.link--price(href="page-faq.html") Задать вопрос
+      +e.A.link--price(href="page-questions.html") Задать вопрос
   +b.A.up(href="#")
 
 
+// Overlay
++b.overlay
+  +e.bg
+  +e.form
+    +e.close(href="/")
+    // Form cost
+    include _form--cost.pug 
 
 

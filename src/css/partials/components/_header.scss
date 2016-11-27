@@ -70,11 +70,11 @@
   }
   &__close{
     position: absolute;
+    z-index: 5;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    color: $text-color-white;
-    font-size: 1.2em;
-    opacity: 0.5;
+    @include sprite($s-close-search);
+    opacity: 0.7;
   }
 }

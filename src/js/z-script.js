@@ -59,8 +59,6 @@ jQuery(document).ready(function($){
     ]
   });
 
-
-
   /* search */
   $('.social-links__link--search').click(function(e) { 
       e.preventDefault();    
@@ -99,11 +97,26 @@ jQuery(document).ready(function($){
     }
   });
 
-  /* hamburger */
+  /* Hamburger */
   $('.hamburger').click(function(e) { 
       e.preventDefault();    
       $('.nav__wrapper').toggle();
   });
+
+  /* Form--cost the modal window */
+  $('.nav__item--btn .nav__link, .btn--footer').click( function(e){
+    e.preventDefault(); 
+    $('body').css({'overflow':'hidden'});   
+    $('.overlay').show();
+    $('.overlay').find('.overlay__form').fadeIn();
+  });
+  /* Close the modal window */
+  $('.overlay__bg, .overlay__close').click( function(e){ 
+    e.preventDefault();
+    $('body').css({'overflow':'auto'});
+    $(this).closest('.overlay').find('.overlay__form').fadeOut();
+    $(this).closest('.overlay').fadeOut(400);
+  }); 
 
 
   /* 404 - sticky footer */
