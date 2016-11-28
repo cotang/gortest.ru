@@ -23,19 +23,9 @@ block content
             include partials/components/_form--question.pug
 
     // Questions
-    include partials/components/_questions.pug 
-             
+    include partials/components/_questions.pug
     // Specialists
-    +b.SECTION.specialists
-      .container
-        .row
-          .col-xs-12.col-xl-6 
-            +e.H2.title С вами работает    
-            // Manager
-            include partials/components/_manager.pug 
-          .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3.col-xl-6.offset-xl-0
-            +e.form
-              // Form application
-              include partials/components/_form--application.pug
+    include partials/components/_specialists.pug 
+
 
 
